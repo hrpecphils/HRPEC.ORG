@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/images/flat-logo.svg">
+  <link href="/assets/css/output.css" rel="stylesheet" />
+  <link href="/assets/css/index.html">
+
+  <title>HRPEC</title>
+</head>
+
+<body class="font-poppins">
+  <nav class="flex flex-row justify-between px-5 py-2" style="position: fixed;
+                width: 100%;
+                background-color: white;
+                z-index: 100;
+                ">
+    <div class="flex flex-row">
+      <a href="/index.html"><img class="h-8 me-2 tablet:h-12 desktop:h-16 " src="/assets/images/semi-final-logo.svg"></a>
+    </div>
+    <div class="hidden desktop:flex flex-row items-center">
+      <ul class="flex flex-row font-poppins">
+        <li class="px-2 text-xxs font-bold tablet:text-xs desktop:text-sm tablet:font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/index.html" target="_self">HOME</a></li>
+        <div class="relative flex flex-col z-10">
+          <li class="flex flex-row peer px-2 text-xs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+              class="hover:text-f-2-blue duration-200" href="/assets/about.html">ABOUT</a>
+            <img class="rotate hidden desktop:flex" src="/assets/images/navbar-up-down-button.png">
+          </li>
+          <div class="absolute hidden bg-f-white peer-hover:flex hover:flex flex-col mt-5 -ml-1 w-48">
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/about.html">HRPEC</a>
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/about-the-boards.html">THE BOARDS</a>
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/our-partners-alab.html">OUR PARTNERS</a>
+          </div>
+        </div>
+
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center "><a
+            class="text-f-2-blue underline decoration-f-blue" href="/assets/ourwork.html" target="_self">OUR WORK</a>
+        </li>
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/assets/contactus.html" target="_self">CONTACT US</a></li>
+
+        <div class="relative flex flex-col z-10">
+          <li class="flex flex-row peer px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+              class="hover:text-f-2-blue duration-200" href="/assets/updates.html" target="_self">UPDATES</a>
+            <img class="rotate hidden desktop:flex" src="/assets/images/navbar-up-down-button.png">
+          </li>
+          <div class="absolute hidden bg-f-white peer-hover:flex hover:flex flex-col mt-5 -ml-16 w-36">
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/updates.html">EVENTS<br>PUBLICATIONS</a>
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/updates-statements.html">STATEMENTS</a>
+          </div>
+        </div>
+      </ul>
+      <a class="text-xs text-center font-poppins font-bold tablet:text-xs tablet:font-bold desktop:text-lg text-black hover:text-white"
+        href="/assets/donate.html"><button
+          class="mx-2 justify-center items-center border-2 border-blue-600 px-4 py-1 desktop:mx-4 desktop:px-10 desktop:py-2 hover:bg-s-blue hover:border-s-blue duration-200">DONATE</button></a>
+    </div>
+
+    <div class="hidden desktop:hidden tablet:flex flex-row items-center">
+      <ul class="flex flex-row font-poppins justify-end">
+        <li class="px-2 text-xxs font-bold tablet:text-xs tablet:font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/index.html" target="_self">HOME</a></li>
+
+        <select class="text-xs font-bold w-1/6 hover:text-f-2-blue duration-200" name="links" id="" size="1"
+          onchange="window.location.href=this.value;">
+          <option class="text-black text-xs text-center font-semibold" value="">ABOUT</option>
+          <option class="text-black text-xs text-center font-semibold" value="/assets/about.html">HRPEC</option>
+          <option class="text-black text-xs text-center font-semibold" value="/assets/about-the-boards.html">The Boards</option>
+          <option class="text-black text-xs text-center font-semibold" value="/assets/our-partners-alab.html">Our Partners
+          </option>
+        </select>
+
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center "><a
+            class="text-f-2-blue underline decoration-f-blue" href="/assets/ourwork.html" target="_self">OUR WORK</a>
+        </li>
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/assets/contactus.html" target="_self">CONTACT US</a></li>
+
+        <select class="text-xs font-bold w-1/5 " name="links" id="" size="1"
+          onchange="window.location.href=this.value;">
+          <option class="text-xs text-center font-semibold" value="">UPDATES</option>
+          <option class="text-xs text-center font-semibold" value="/assets/updates.html">EVENTS PUBLICATIONS</option>
+          <option class="text-xs text-center font-semibold" value="/assets/updates-statements.html">STATEMENTS</option>
+        </select>
+      </ul>
+      <a class="text-xs text-center font-poppins font-bold tablet:text-xs tablet:font-bold desktop:text-lg text-black hover:text-white"
+        href="/assets/donate.html"><button
+          class="mx-2 justify-center items-center border-2 border-blue-600 px-4 py-1 desktop:mx-4 desktop:px-10 desktop:py-2 hover:bg-s-blue hover:border-s-blue duration-200">DONATE</button></a>
+    </div>
+
+    <div class="tablet:hidden">
+      <button id="menu-btn" class="block hamburger tablet:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <div class="tablet:hidden">
+        <div id="menu" class="absolute flex-col justify-center text-center items-center hidden self-end py-8 mt-4 text-xs space-y-6 font-semibold bg-white phone:w-auto
+          phone:self-center left-6 right-6 drop-shadow-md">
+          <a href="/index.html">HOME</a>
+
+          <select class="" name="links" id="" size="1" onchange="window.location.href=this.value;">
+            <option class="text-xxs text-center font-semibold" value="">ABOUT</option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/about.html">HRPEC</option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/about-the-boards.html">The Boards
+            </option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/our-partners-alab.html">Our Partners
+            </option>
+          </select>
+
+          <a class="text-f-blue underline" href="/assets/ourwork.html">OUR WORK</a>
+          <a href="/assets/contactus.html">CONTACT US</a>
+
+          <select class="w-1/2" name="links" id="" size="1" onchange="window.location.href=this.value;">
+            <option class="text-xxs text-center font-semibold" value="">UPDATES</option>
+            <option class="text-xxs text-center font-semibold" value="/assets/updates.html">EVENTS PUBLICATIONS</option>
+            <option class="text-xxs text-center font-semibold" value="/assets/updates-statements.html">STATEMENTS</option>
+          </select>
+          <a class="bg-s-blue px-6 py-2 text-xl text-white" href="/assets/donate.html">DONATE</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative flex flex-row justify-between bg-gradient-to-l to-f-blue from-t-blue w-full">
+    <h1
+      class="z-10 text-s-white font-bold pt-20 text-4xl -mb-4 tablet:text-5xl tablet:mb-0 tablet:pl-4 tablet:pt-32 desktop:text-8xl desktop:pl-6 desktop:pt-60">
+      OUR WORK</h1>
+    <div class="absolute bottom-0 right-0 pr-2 tablet:pb-1 desktop:pb-6 desktop:pr-8"><img
+        class="w-16 tablet:w-32 desktop:w-64" src="/assets/images/flat-logo.svg"></div>
+  </section>
+
+  <section class="h-full bg-s-white">
+    <p
+      class="text-xs px-4 pt-4 pb-8 tablet:text-lg tablet:pr-36 desktop:text-2xl desktop:pl-10 desktop:pt-10 desktop:pr-.30">
+      At HRPEC, we are dedicated to advancing the cause of human rights through a variety of initiatives and programs. Our
+      work is rooted in the belief that the arts, education, and dialogue are powerful tools for promoting human rights and
+      empowering individuals and communities.</p>
+  </section>
+
+  <section class="flex flex-col tablet:flex-col mb-8 ">
+    <div class="w-full tablet:flex tablet:flex-row bg-t-blue">
+      <div class="tablet:w-full">
+        <img class=" w-full h-full" src="/assets/images/our-work-img/f-img-ourwork.svg">
+      </div>
+      <div class="tablet:w-full">
+        <div>
+          <h1
+            class="bg-s-white text-t-blue font-bold text-center text-5.2xl -mb-6 tablet:text-5.7xl tablet:-mb-6 desktop:text-8.4xl desktop:-mb-11">
+            MIYERKULET</h1>
+        </div>
+        <div class="bg-t-blue py-4 px-4 tablet:pb-0 desktop:py-6">
+          <p class="text-white text-xs tablet:text-sm desktop:text-xl">
+            MiyerKULET! is a regular Wednesday event, providing a safe space for the arts and embracing the belief that
+            arts are a crucial aspect of human existence. It serves as a consistent virtual and physical platform for
+            artists, filmmakers, musicians, and creators to freely present and discuss their work without financial
+            constraints.</p>
+
+          <a class="text-white text-xs font-bold flex justify-end desktop:text-lg">
+            <button
+              class="show-modal bg-s-blue py-1 px-4 mr-4 mb-4 mt-10 desktop:py-4 desktop:px-8 desktop:mt-14 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
+              SEE MORE >
+            </button></a>
+
+          <div
+            class="modal fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80 overflow-scroll">
+
+            <div
+              class=" rounded shadow-lg w-full h-3/4 px-4 py-4 tablet:px-7 tablet:py-0 tablet:h-2/3 desktop:px-20 desktop:py-0 desktop:h-5/6">
+              <div
+                class="border-b py-2 pr-2 flex justify-between items-center -mb-6 tablet:py-4 tablet:pr-4 tablet:-mb-10  desktop:pr-8 desktop:-mb-14">
+                <h3 class="font-semibold text-4xl text-t-blue tablet:text-6xl desktop:text-8xl">MIYERKULET</h3>
+                <button
+                  class="font-extrabold text-t-blue close-modal text-xl tablet:text-3xl desktop:text-5xl">X</button>
+              </div>
+
+              <div class="w-full h-full bg-t-blue overflow-scroll p-3 tablet:p-6 desktop:px-14 desktop:py-10">
+                <div class="bg-f-white">
+                  <!-- <img src="/dist/our-work-img/miyerkulet-modal.svg"> -->
+                  
+                  <p
+                    class="font-merriweather text-xs text-black p-2 tablet:text-base tablet:px-4 tablet:pb-4 desktop:text-xl desktop:px-6 desktop:pb-6 tablet:bg-[url('/assets/images/donate-images/donate-bg.svg')] bg-no-repeat bg-cover">
+                    MiyerKULET! is a regular Wednesday event which has been a safe space for the arts, rooted on the belief that the arts
+                    are one of the many frontiers of human existence. It serves as a consistent virtual and physical space where art
+                    practitioners, filmmakers, musicians, and other creators are able to present and discuss their ideas and their work to
+                    an audience, free of charge or the commercial limitations of hosting their art. Within a year, MiyerKULET! has been
+                    staged over 50 times, showing over 70 films and 10 theater performances to over 2000 attendees.
+                    
+                    This event partners with different organizations to help promote human rights through a variety of media, and, more
+                    importantly, offers a safe space for all HR advocates and allies to converse freely on human rights issues and discuss
+                    strategies to further the HR agenda in their own spaces. The main priority of the event is to ensure that perspectives
+                    are given, heard, and processed as a group. The artwork–in most cases, static or already finished–serves to facilitate
+                    possible discussions among the spectators.
+                    
+                    What works for the staging of MiyerKULET! are the conducive conditions which the HRPEC office offers. MiyerKULET! is
+                    held at a well-ventilated open-air rooftop, with a panoramic view of Quezon City. Its space is constantly changing and
+                    evolving with its growing community, always making room for new faces and ideas. This diverse community, with its open
+                    minds and spirited discussions, is the centerpiece of MiyerKULET!.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tablet:flex tablet:flex-row-reverse bg-f-blue">
+      <div class="tablet:w-full">
+        <img class=" w-full h-full" src="/assets/images/our-work-img/s-img-ourwork.svg">
+      </div>
+      <div class="tablet:w-full">
+        <div>
+          <h1
+            class="bg-s-white text-f-blue font-bold text-center text-5.1xl -mb-5 tablet:text-5.5xl tablet:-mb-6 desktop:text-8.1xl desktop:-mb-10">
+            SINESYUDAD</h1>
+        </div>
+        <div class="bg-f-blue py-4 px-4 tablet:pb-0 desktop:py-6">
+          <p class="text-white text-xs tablet:text-sm desktop:text-xl">
+            Sine Siyudad is a community-based film screening event organized in collaboration with local stakeholders,
+            organizations, and institutions. Its main objective is to stimulate meaningful discussions and reflections
+            among the audience by showcasing thought-provoking films within the context of Philippine social realities
+            and human rights.
+          </p>
+
+          <a class="text-white text-xs font-bold flex justify-end desktop:text-lg">
+            <button
+              class="show-modal2 bg-s-blue py-1 px-4 mr-4 mb-4 mt-10 desktop:py-4 desktop:px-8 desktop:mt-14 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
+              SEE MORE >
+            </button></a>
+
+          <div
+            class="modal2 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-t-blue  bg-opacity-80 overflow-scroll">
+
+            <div
+              class=" rounded shadow-lg w-full h-3/4 px-4 py-4 tablet:px-7 tablet:py-0 tablet:h-2/3 desktop:px-20 desktop:py-0 desktop:h-5/6">
+              <div
+                class="border-b py-2 pr-2 flex justify-between items-center -mb-6 tablet:py-4 tablet:pr-4 tablet:-mb-10  desktop:pr-8 desktop:-mb-14">
+                <h3 class="font-semibold text-4xl text-s-blue tablet:text-6xl desktop:text-8xl">SINESYUDAD</h3>
+                <button
+                  class="font-extrabold text-s-blue close-modal2 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+              </div>
+
+              <div class="w-full h-full bg-s-blue overflow-scroll p-3 tablet:p-6 desktop:px-14 desktop:py-10">
+                <div class="bg-f-white">
+                  <!-- <img src="/dist/our-work-img/miyerkulet-modal.svg"> -->
+                
+                  <p
+                    class="font-merriweather text-xs text-black p-2 tablet:text-base tablet:px-4 tablet:pb-4 desktop:text-xl desktop:px-6 desktop:pb-6 tablet:bg-[url('/assets/images/donate-images/donate-bg.svg')] bg-no-repeat bg-cover">
+                    Sine Siyudad is a community-based film screening event held in collaboration with local stakeholders, organizations, and
+                    institutions. The program aims to foster meaningful discussions and reflections among the audience by featuring
+                    thought-provoking films. These discussions are facilitated within the context of Philippine social realities and human
+                    rights.
+                    
+                    Sine Siyudad has successfully taken place in various communities across Metro Manila, including Brgy. Krus na Ligas,
+                    Brgy. Bagong Silangan, Brgy. Payatas, and Brgy. Tumana. While HRPEC spearheads the program in different locations, our
+                    ultimate goal is to empower local organizations and communities with the necessary skills to independently sustain and
+                    manage Sine Siyudad. This includes providing support in marketing strategies and logistical arrangements. By empowering
+                    local communities and organizations, we hope to encourage ongoing dialogue and engagement on human rights in the
+                    Philippines.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tablet:flex tablet:flex-row bg-t-blue">
+      <div class="tablet:w-full">
+        <img class="w-full h-full" src="/assets/images/our-work-img/t-img-ourwork.svg">
+      </div>
+      <div class="tablet:w-full">
+        <div>
+          <h1
+            class="bg-s-white text-t-blue font-extrabold text-center text-3.1xl -mb-4 tablet:text-4.3xl tablet:-mb-5 desktop:text-6.6xl desktop:-mb-8">
+            HRPEC CHIKAHAN</h1>
+        </div>
+        <div class="bg-t-blue py-4 px-4 tablet:pb-0 desktop:py-6">
+          <p class="text-white text-xs tablet:text-sm desktop:text-xl">
+            HRPEC Chikahan is a monthly roundtable discussion that unites diverse participants, including experts,
+            activists, policymakers, and community representatives, to tackle pressing human rights issues. This
+            inclusive platform fosters open and constructive dialogue, enabling the exchange of ideas, experiences, and
+            perspectives on advancing human rights practices.
+          </p>
+
+          <a class="text-white text-xs font-bold flex justify-end desktop:text-lg">
+            <button
+              class="show-modal3 bg-s-blue py-1 px-4 mr-4 mb-4 mt-10 desktop:py-4 desktop:px-8 desktop:mt-14 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
+              SEE MORE >
+            </button></a>
+
+          <div
+            class="modal3 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80 overflow-scroll">
+
+            <div
+              class=" rounded shadow-lg w-full h-3/4 px-4 py-4 tablet:px-7 tablet:py-0 tablet:h-2/3 desktop:px-20 desktop:py-0 desktop:h-5/6">
+              <div
+                class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-10  desktop:pr-8 desktop:-mb-14">
+                <h3 class="font-semibold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">HRPEC CHIKAHAN</h3>
+                <button
+                  class="font-extrabold text-t-blue close-modal3 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+              </div>
+
+              <div class="w-full h-full bg-t-blue overflow-scroll p-3 tablet:p-6 desktop:px-14 desktop:py-10">
+                <div class="bg-f-white">
+                  <!-- <img src="/dist/our-work-img/miyerkulet-modal.svg"> -->
+                  
+                  <p
+                    class="font-merriweather text-xs text-black p-2 tablet:text-base tablet:px-4 tablet:pb-4 desktop:text-xl desktop:px-6 desktop:pb-6 tablet:bg-[url('/assets/images/donate-images/donate-bg.svg')] bg-no-repeat bg-cover">
+                    HRPEC Chikahan is a monthly roundtable discussion that brings together a diverse group of participants, including
+                    experts, activists, policymakers, and community representatives, to address critical human rights issues. This inclusive
+                    platform provides an opportunity for open and constructive dialogue, facilitating the exchange of ideas, experiences,
+                    and perspectives on promoting and advancing human rights practices.
+                    
+                    The roundtable discussions aim to develop actionable recommendations and steps that the human rights community can
+                    collectively undertake to strengthen human rights frameworks. These recommendations will be made available as a shared
+                    study among human rights organizations and institutions.
+                    
+                    Its launch, entitled "HRPEC Chikahan: A Roundtable Discussion on LGBT+ and Women's Human Rights", focused on shedding
+                    light on the barriers and challenges faced by LGBT+ individuals and women in accessing their human rights. It
+                    facilitated participatory discussions that allowed both the panelists and audience members to address these issues
+                    together, in an effort to build a more just and inclusive society that upholds the rights of all individuals.
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tablet:flex tablet:flex-row-reverse bg-f-blue">
+      <div class="tablet:w-full">
+        <img class="w-full h-full" src="/assets/images/our-work-img/fourth-img-ourwork.svg">
+      </div>
+      <div class="tablet:w-full">
+        <div>
+          <h1
+            class="bg-s-white text-f-blue font-bold text-center text-4.2xl -mb-4 tablet:text-5xl desktop:text-7.7xl desktop:-mb-8">
+            HR DISCUSSION</h1>
+        </div>
+        <div class="bg-f-blue py-4 px-4 tablet:pb-0 desktop:py-6">
+          <p class="text-white text-xs tablet:text-sm desktop:text-xl">
+            HRPEC's Human Rights Education lectures and seminars have been instrumental in achieving the organization's
+            objectives, reaching over 170 venues. Recognizing the importance of early awareness and education on human
+            rights, HRPEC believes that such knowledge fosters a lifelong commitment to upholding innate rights. For the
+            past five years, HRPEC has been providing these lectures and seminars at little to no cost, engaging
+            audiences in discussions about human rights in the Philippines.
+            Today, HRPEC's Human Rights Discussions prioritize a listener's perspective and acknowledge the growing
+            awareness of individual rights and their impact on local communities.
+          </p>
+          <a class="text-white text-xs font-bold flex justify-end desktop:text-lg">
+            <button
+              class="show-modal4 bg-s-blue py-1 px-4 mr-4 mb-4 mt-10 desktop:py-4 desktop:px-8 desktop:mt-14 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
+              SEE MORE >
+            </button></a>
+
+          <div
+            class="modal4 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-t-blue  bg-opacity-80 overflow-scroll">
+
+            <div
+              class=" rounded shadow-lg w-full h-3/4 px-4 py-4 tablet:px-7 tablet:py-0 tablet:h-2/3 desktop:px-20 desktop:py-0 desktop:h-5/6">
+              <div
+                class="border-b py-2 pr-2 flex justify-between items-center -mb-5 tablet:py-4 tablet:pr-4 tablet:-mb-10  desktop:pr-8 desktop:-mb-14">
+                <h3 class="font-semibold text-3xl text-s-blue tablet:text-6xl desktop:text-8xl">HR DISCUSSION</h3>
+                <button
+                  class="font-extrabold text-s-blue close-modal4 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+              </div>
+
+              <div class="w-full h-full bg-s-blue overflow-scroll p-3 tablet:p-6 desktop:px-14 desktop:py-10">
+                <div class="bg-f-white">
+                  <!-- <img src="/dist/our-work-img/miyerkulet-modal.svg"> -->
+                  <h1
+                    class="font-merriweather font-semibold text-base text-black p-2 tablet:text-2xl tablet:px-4 tablet:pb-4 desktop:text-4xl desktop:px-6 desktop:pb-6">
+                    HUMAN RIGHTS DISCUSSION</h1>
+                  <p
+                    class="font-merriweather text-xs text-black p-2 tablet:text-base tablet:px-4 tablet:pb-4 desktop:text-xl desktop:px-6 desktop:pb-6 tablet:bg-[url('/assets/images/donate-images/donate-bg.svg')] bg-no-repeat bg-cover">
+                    HRPEC's Human Rights Education lectures and seminars, which have reached over 170 venues, play a crucial role in
+                    fulfilling the organization's goals. HRPEC firmly believes that education and early awareness of one's rights lead
+                    individuals to a lifetime of questioning, exploration, and commitment to upholding the innate rights we all possess.
+                    Over the past five years, HRPEC has provided its Human Rights Education lectures and seminars at virtually no cost to
+                    audiences willing to listen and engage in discussions about the state of human rights in the Philippines.
+                    
+                    Today, HRPEC's Human Rights Discussions adopt a listener's perspective and embrace the growing awareness of individuals'
+                    rights and the circumstances in their respective communities that affect the realization of those rights. Rather than
+                    simply informing audiences about their rights, HRPEC's discussions focus on cultivating a realization of the presence of
+                    both the facilitator's and the audience member's rights and how they can be continuously upheld. Inclusivity and
+                    participatory community-building are at the core of these discussions, aligning with the formulation of ideas about
+                    human rights. Since these discussions aim to expand and reach wider audiences, the training of trainers for Human Rights
+                    Discussions is essential for success</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tablet:flex tablet:flex-row bg-t-blue">
+      <div class="tablet:w-full">
+        <img class="w-full h-full" src="/assets/images/our-work-img/fifth-img-ourwork.svg">
+      </div>
+      <div class="tablet:w-full">
+        <div>
+          <h1
+            class="bg-s-white text-t-blue font-bold text-center text-4.1xl -mb-4 tablet:text-5xl tablet:-mb-5 desktop:text-7.8xl desktop:-mb-8">
+            FREE LEILA NOW</h1>
+        </div>
+        <div class="bg-t-blue py-4 px-4 tablet:pb-0 desktop:py-6">
+          <p class="text-white text-xs tablet:text-sm desktop:text-xl">
+            HRPEC has been unwavering in its dedication to securing the release of Sen. Leila de Lima since 2017. The
+            organization actively participates in all her court appearances and collaborates with support groups to
+            amplify the demand for her immediate freedom.
+          </p>
+          <a class="text-white text-xs font-bold flex justify-end desktop:text-lg">
+            <button
+              class="show-modal5 bg-s-blue py-1 px-4 mr-4 mb-4 mt-10 desktop:py-4 desktop:px-8 desktop:mt-14 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
+              SEE MORE >
+            </button></a>
+
+          <div
+            class="modal5 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80 overflow-scroll">
+
+            <div
+              class=" rounded shadow-lg w-full h-3/4 px-4 py-4 tablet:px-7 tablet:py-0 tablet:h-2/3 desktop:px-20 desktop:py-0 desktop:h-5/6">
+              <div
+                class="border-b py-2 pr-2 flex justify-between items-center -mb-5 tablet:py-4 tablet:pr-4 tablet:-mb-10  desktop:pr-8 desktop:-mb-14">
+                <h3 class="font-semibold text-3xl text-t-blue tablet:text-6xl desktop:text-8xl">FREE LEILA NOW</h3>
+                <button
+                  class="font-extrabold text-t-blue close-modal5 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+              </div>
+
+              <div class="w-full h-full bg-t-blue overflow-scroll p-3 tablet:p-6 desktop:px-14 desktop:py-10">
+                <div class="bg-f-white">
+                  <!-- <img src="/dist/our-work-img/miyerkulet-modal.svg"> -->
+                  <h1
+                    class="font-merriweather font-semibold text-base text-black p-2 tablet:text-2xl tablet:px-4 tablet:pb-4 desktop:text-4xl desktop:px-6 desktop:pb-6">
+                    FREE LEILA NOW</h1>
+                  <p
+                    class="font-merriweather text-xs text-black p-2 tablet:text-base tablet:px-4 tablet:pb-4 desktop:text-xl desktop:px-6 desktop:pb-6 tablet:bg-[url('/assets/images/donate-images/donate-bg.svg')] bg-no-repeat bg-cover">
+                    Since 2017, HRPEC has been committed to supporting the release of Sen. Leila de Lima. The organization consistently
+                    attends all her court appearances and helps coordinate with support groups to help amplify the call for her immediate
+                    freedom.
+                    
+                    In 2020, the organization spearheaded the International Forum on Lawfare: Weaponizing Law Against Dissent, which
+                    highlights how in different regions across the world, political opposition face persecutions for speaking truth to
+                    power. The event was attended by parliamentarians from across all regions, as well as prominent Filipino human rights
+                    defenders representing all fronts of struggle in the Philippines.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="/assets/js/script.js"></script>
+  <script>
+    const modal = document.querySelector('.modal');
+
+    const showModal = document.querySelector('.show-modal');
+    const closeModal = document.querySelector('.close-modal');
+
+    showModal.addEventListener('click', function () {
+      modal.classList.remove('hidden')
+    });
+
+    closeModal.addEventListener('click', function () {
+      modal.classList.add('hidden')
+    });
+  </script>
+
+  <script>
+    const modal2 = document.querySelector('.modal2');
+
+    const showModal2 = document.querySelector('.show-modal2');
+    const closeModal2 = document.querySelector('.close-modal2');
+
+    showModal2.addEventListener('click', function () {
+      modal2.classList.remove('hidden')
+    });
+
+    closeModal2.addEventListener('click', function () {
+      modal2.classList.add('hidden')
+    });
+  </script>
+
+  <script>
+    const modal3 = document.querySelector('.modal3');
+
+    const showModal3 = document.querySelector('.show-modal3');
+    const closeModal3 = document.querySelector('.close-modal3');
+
+    showModal3.addEventListener('click', function () {
+      modal3.classList.remove('hidden')
+    });
+
+    closeModal3.addEventListener('click', function () {
+      modal3.classList.add('hidden')
+    });
+  </script>
+
+  <script>
+    const modal4 = document.querySelector('.modal4');
+
+    const showModal4 = document.querySelector('.show-modal4');
+    const closeModal4 = document.querySelector('.close-modal4');
+
+    showModal4.addEventListener('click', function () {
+      modal4.classList.remove('hidden')
+    });
+
+    closeModal4.addEventListener('click', function () {
+      modal4.classList.add('hidden')
+    });
+  </script>
+
+  <script>
+    const modal5 = document.querySelector('.modal5');
+
+    const showModal5 = document.querySelector('.show-modal5');
+    const closeModal5 = document.querySelector('.close-modal5');
+
+    showModal5.addEventListener('click', function () {
+      modal5.classList.remove('hidden')
+    });
+
+    closeModal5.addEventListener('click', function () {
+      modal5.classList.add('hidden')
+    });
+  </script>
+</body>
+
+<footer
+  class="flex flex-col justify-between bg-f-1-blue py-2 px-4 tablet:flex-row tablet:py-10 tablet:px-8 desktop:py-14 desktop:px-16">
+  <div class="flex flex-row justify-center mb-4 tablet:flex-col desktop:mb-0">
+    <a href="/index.html">
+      <img class="w-24 pr-2 tablet:w-44 tablet:p-0 desktop:w-52" src="/assets/images/logo-no text.png">
+      <div class="text-white">
+        <p class="font-bold text-4xl tablet:text-3xl desktop:text-6xl">HRPEC</p>
+        <p class="-mt-3 desktop:-mt-5 text-xxxs font-bold  desktop:text-xs">HUMAN RIGHTS AND PEOPLE<br>EMPOWERMENT
+          CENTER</p>
+      </div>
+    </a>
+  </div>
+  <div class="tablet:mx-8 desktop:ml-16 desktop:mx-0">
+    <p
+      class="text-f-white text-sm text-center mb-2 tablet:text-lg tablet:text-left tablet:justify-between desktop:text-3xl desktop:mb-8">
+      We have so many exciting things going on, be the first to find out!</p>
+    <h1
+      class="flex text-f-white text-xl font-extrabold justify-center mb-2 tablet:text-sm tablet:bold tablet:justify-start tablet:mb-1 desktop:text-3xl">
+      SOCIALS</h1>
+    <div class="flex flex-row justify-center mb-4 tablet:justify-start desktop:mb-10">
+      <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
+          class="h-8 mx-2 tablet:ml-0 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/ig-icon.png"></a>
+      <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
+          class="h-8 mx-2 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/fb-icon.png"></a>
+      <a href="https://twitter.com/HRPECPhils" target="_blank"><img
+          class="h-8 mx-2 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/xffffff.svg"></a>
+      <a href="https://www.tiktok.com/@hrpecphils?lang=en" target="_blank"><img
+          class="h-8 mx-2 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/tiktok-icon.png"></a>
+    </div>
+    <p class="text-f-white text-center text-xs mb-4 tablet:text-xxs tablet:text-left desktop:text-base desktop:mb-8">©
+      2023 Human Rights and People Empowerment Center</p>
+    <div
+      class="flex flex-row text-f-white text-xxs justify-center border-t-2 pt-2 mb-4 tablet:justify-start desktop:text-sm">
+      <a class="mr-2 tablet:px-5 desktop:pr-6 duration-300 hover:text-s-blue" href="#">Developers</a>
+      <a class="mr-2 tablet:px-5 desktop:px-6 duration-300 hover:text-s-blue" href="/assets/copyrights.html">Copyrights</a>
+      <a class="mr-2 tablet:px-5 desktop:px-6 duration-300 hover:text-s-blue" href="/assets/privacy-policy.html">Privacy
+        Policy</a>
+      <a class="mr-2 tablet:px-5 desktop:px-6 duration-300 hover:text-s-blue" href="/assets/terms-of-use.html">Terms of
+        Use</a>
+    </div>
+  </div>
+  <div
+    class="flex flex-row justify-center text-white text-xs font-bold mb-4 tablet:flex-col tablet:justify-start text-right desktop:font-semibold desktop:text-base desktop:pl-10">
+    <div class="flex flex-col px-2">
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/about.html">ABOUT US</a>
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/about.html#location">LOCATION</a>
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/ourwork.html">OUR WORK</a>
+    </div>
+    <div class="flex flex-col px-2">
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/contactus.html">CONTACT US</a>
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/updates.html">UPDATES</a>
+      <a class="text-base py-2 mt-2 desktop:text-2xl desktop:mt-8" href="/assets/donate.html"><button
+          class="bg-s-blue py-2 px-4 desktop:py-2 desktop:px-10 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">DONATE</button></a>
+    </div>
+  </div>
+</footer>
+
+</html>

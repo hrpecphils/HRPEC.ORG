@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/images/flat-logo.svg">
+  <link href="/assets/css/output.css" rel="stylesheet" />
+
+  <title>HRPEC</title>
+</head>
+
+<body class="font-poppins">
+
+  <nav class="flex flex-row justify-between px-5 py-2" style="position: fixed;
+                width: 100%;
+                background-color: white;
+                z-index: 100;
+                ">
+    <div class="flex flex-row">
+      <a href="/index.html"> <img class="h-8 me-2 tablet:h-12 desktop:h-16 " src="/assets/images/semi-final-logo.svg"></a>
+    </div>
+    <div class="hidden desktop:flex flex-row items-center">
+      <ul class="flex flex-row font-poppins">
+        <li class="px-2 text-xxs font-bold desktop:text-sm text-center"><a class="hover:text-f-2-blue duration-200"
+            href="/index.html" target="_self">HOME</a></li>
+
+        <div class="relative flex flex-col z-10">
+          <li class="flex flex-row peer px-2 text-xs tablet:text-xs desktop:text-sm font-bold text-center"><a
+              class="text-f-2-blue underline decoration-f-blue" href="/assets/about.html">ABOUT</a><img
+              class="rotate hidden desktop:flex" src="/assets/images/navbar-up-down-button-blue.png"></li>
+          <div class="absolute hidden bg-f-white peer-hover:flex hover:flex flex-col mt-5 -ml-1 w-48">
+            <a class="bg-s-blue text-white duration-300 hover:bg-s-blue mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/about.html">HRPEC</a>
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/about-the-boards.html">THE BOARDS</a>
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/our-partners-alab.html">OUR PARTNERS</a>
+          </div>
+        </div>
+
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center "><a
+            class="hover:text-f-2-blue duration-200" href="/assets/ourwork.html" target="_self">OUR WORK</a></li>
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/assets/contactus.html" target="_self">CONTACT US</a></li>
+
+        <div class="relative flex flex-col z-10">
+          <li class="flex flex-row peer px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+              class="hover:text-f-2-blue duration-200" href="/assets/updates.html" target="_self">UPDATES</a>
+            <img class="rotate hidden desktop:flex" src="/assets/images/navbar-up-down-button.png">
+          </li>
+          <div class="absolute hidden bg-f-white peer-hover:flex hover:flex flex-col mt-5 -ml-16 w-36">
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/updates.html">EVENTS<br>PUBLICATIONS</a>
+            <a class="duration-300 hover:bg-s-blue hover:text-white mx-2 mt-1 mb-1 p-2 text-ssm font-poppins font-bold justify-center"
+              href="/assets/updates-statements.html">STATEMENTS</a>
+          </div>
+        </div>
+      </ul>
+      <a class="text-xs text-center font-poppins font-bold tablet:text-xs tablet:font-bold desktop:text-lg text-black hover:text-white"
+        href="/assets/donate.html"><button
+          class="mx-2 justify-center items-center border-2 border-blue-600 px-4 py-1 desktop:mx-4 desktop:px-10 desktop:py-2 hover:bg-s-blue hover:border-s-blue duration-200">DONATE</button></a>
+    </div>
+
+    <div class="hidden desktop:hidden tablet:flex flex-row items-center">
+      <ul class="flex flex-row font-poppins justify-end">
+        <li class="px-2 text-xxs font-bold tablet:text-xs tablet:font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/index.html" target="_self">HOME</a></li>
+
+        <select class="text-xs font-bold w-1/6 text-f-2-blue underline decoration-f-blue" name="links" id="" size="1"
+          onchange="window.location.href=this.value;">
+          <option class="text-black text-xs text-center font-semibold bg-s-blue" value="">ABOUT</option>
+          <option class="text-f-blue text-xs text-center font-semibold" value="/assets/about.html">HRPEC</option>
+          <option class="text-black text-xs text-center font-semibold" value="/assets/about-the-boards.html">The Boards</option>
+          <option class="text-black text-xs text-center font-semibold" value="/assets/our-partners-alab.html">Our Partners
+          </option>
+        </select>
+
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center "><a
+            class="hover:text-f-2-blue duration-200" href="/assets/ourwork.html" target="_self">OUR WORK</a></li>
+        <li class="px-2 text-xxs tablet:text-xs desktop:text-sm tablet:font-bold font-bold text-center"><a
+            class="hover:text-f-2-blue duration-200" href="/assets/contactus.html" target="_self">CONTACT US</a></li>
+
+        <select class="text-xs font-bold w-1/5 " name="links" id="" size="1"
+          onchange="window.location.href=this.value;">
+          <option class="text-xs text-center font-semibold" value="">UPDATES</option>
+          <option class="text-xs text-center font-semibold" value="/assets/updates.html">EVENTS PUBLICATIONS</option>
+          <option class="text-xs text-center font-semibold" value="/assets/updates-statements.html">STATEMENTS</option>
+        </select>
+      </ul>
+      <a class="text-xs text-center font-poppins font-bold tablet:text-xs tablet:font-bold desktop:text-lg text-black hover:text-white"
+        href="/assets/donate.html"><button
+          class="mx-2 justify-center items-center border-2 border-blue-600 px-4 py-1 desktop:mx-4 desktop:px-10 desktop:py-2 hover:bg-s-blue hover:border-s-blue duration-200">DONATE</button></a>
+    </div>
+
+    <div class="tablet:hidden">
+      <button id="menu-btn" class="block hamburger tablet:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <div class="tablet:hidden">
+        <div id="menu" class="absolute flex-col justify-center text-center items-center hidden self-end py-8 mt-4 text-xs space-y-6 font-semibold bg-white phone:w-auto
+          phone:self-center left-6 right-6 drop-shadow-md">
+          <a href="/index.html">HOME</a>
+
+          <select class="w-1/4 text-f-blue underline" name="links" id="" size="1"
+            onchange="window.location.href=this.value;">
+            <option class="text-black text-xxs text-center font-semibold" value="">ABOUT</option>
+            <option class="text-xxs text-center font-semibold text-f-blue" value="/assets/about.html">HRPEC</option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/about-the-boards.html">The Boards
+            </option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/our-partners-alab.html">Our Partners
+            </option>
+          </select>
+
+          <a href="/assets/ourwork.html">OUR WORK</a>
+          <a href="/assets/contactus.html">CONTACT US</a>
+
+          <select class="w-1/2" name="links" id="" size="1" onchange="window.location.href=this.value;">
+            <option class="text-black text-xxs text-center font-semibold" value="">UPDATES</option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/updates.html">EVENTS PUBLICATIONS
+            </option>
+            <option class="text-black text-xxs text-center font-semibold" value="/assets/updates-statements.html">STATEMENTS
+            </option>
+          </select>
+          <a class="bg-s-blue px-6 py-2 text-xl text-white" href="/assets/assets/donate.html">DONATE</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative flex flex-row justify-between bg-gradient-to-l to-f-blue from-t-blue w-full">
+    <h1
+      class="z-10 text-s-white font-bold pt-20 text-4xl -mb-4 tablet:text-5xl tablet:mb-0 tablet:pl-4 tablet:pt-32 desktop:text-8xl desktop:pl-6 desktop:pt-60">
+      ABOUT HRPEC</h1>
+    <div class="absolute bottom-0 right-0 pr-2 tablet:pb-1 desktop:pb-6 desktop:pr-8"><img
+        class="w-16 tablet:w-32 desktop:w-64" src="/assets/images/flat-logo.svg"></div>
+  </section>
+
+  <section class="h-full bg-s-white">
+    <p
+      class="text-sm px-4 pt-4 pb-8 tablet:text-lg tablet:pr-36 desktop:text-2xl desktop:pl-10 desktop:pt-10 desktop:pr-.30">
+      We aim to open spaces where different communities converge and create initiatives to advance the cause of human rights.
+    </p>
+  </section>
+
+  <section class="flex justify-between flex-col tablet:flex-row">
+    <div class="w-full">
+      <div class="bg-s-white">
+        <h1
+          class="text-t-blue text-7xl font-bold -mt-3 -mb-3 flex justify-center tablet:text-7.8xl tablet:-mt-0 tablet:-mb-4 tablet:justify-center desktop:text-9xl desktop:-mt-0 desktop:-mb-5">
+          MISSION</h1>
+      </div>
+      <div class="bg-t-blue">
+        <p
+          class="text-white text-sm p-5 text-center tablet:text-xl tablet:p-10 desktop:text-2xl desktop:p-2 desktop:pt-16 desktop:pb-16 desktop:leading-10">
+          The Human Rights and People Empowerment Center (HRPEC) is a non-profit organization which aims to open spaces
+          where different communities converge and create initiatives to advance the cause of human rights.</p>
+      </div>
+    </div>
+    <div class="w-full flex flex-col-reverse tablet:flex-col">
+      <div class="bg-f-blue">
+        <p
+          class="text-white text-sm p-5 text-center tablet:text-xl tablet:p-10 desktop:text-2xl desktop:p-12 desktop:pt-16 desktop:pb-16 desktop:leading-10">
+          The Human Rights and People Empowerment Center (HRPEC)<br>envision a society <br> where rights are realized, <br>
+          protected, and guaranteed for all.
+        </p>
+      </div>
+      <div class="bg-f-white h-full">
+        <h1
+          class="text-f-blue text-7xl font-bold -mt-2 -mb-3 flex justify-center tablet:text-7.8xl tablet:-mt-4 tablet:mb-0 tablet:justify-center desktop:text-9xl desktop:-mb-0 desktop:-mt-5">
+          VISION</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="tablet:bg-[url('/assets/images/about-images/about-us-bg.svg')] bg-no-repeat bg-contain">
+    <div class="mb-10">
+      <h1
+        class="text-xl text-f-blue font-bold p-4 text-center tablet:text-left tablet:text-4xl tablet:p-8 desktop:text-6xl desktop:px-10 desktop:py-4">
+        How does HRPEC achieve its goals?</h1>
+      <p
+        class="px-4 text-sm tablet:text-lg tablet:px-8 tablet:pr-40 desktop:text-3xl desktop:px-10 desktop:pr-64 desktop:leading-10">
+        Our rights outline the basis for all people to live with dignity. In upholding our rights, each one of us has
+        the duty and responsibility to recognize, safeguard, and promote our individual rights and the rights of others.
+        Our rights are just, necessary, and enough for all.</p>
+    </div>
+
+    <div class="tablet:mx-.05">
+      <div class="flex flex-col tablet:flex-row">
+        <img class="h-52 tablet:h-72 desktop:h-96 desktop:mr-20" src="/assets/images/about-images/first-image.svg">
+        <div class="flex">
+          <p
+            class="p-4 text-sm text-center flex tablet:items-center tablet:text-xl tablet:pl-8 desktop:leading-10 desktop:text-4xl desktop:p-8 desktop:pl-10">
+            To understand the many different contexts in which our rights are granted or taken away.</p>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse tablet:flex-row">
+        <div class="flex">
+          <p
+            class="p-4 text-sm text-center flex tablet:items-center tablet:text-xl tablet:pr-8 desktop:leading-10 desktop:text-4xl desktop:p-8 desktop:pl-10">
+            To broaden awareness of a Human Rights agenda which is inclusive and just for all genders and classes</p>
+        </div>
+        <img class="h-52 tablet:h-72 desktop:h-96 desktop:ml-20" src="/assets/images/about-images/second-image.svg">
+      </div>
+      <div class="flex flex-col tablet:flex-row">
+        <img class="h-52 tablet:h-72 desktop:h-96 desktop:mr-20" src="/assets/images/about-images/third-image.svg">
+        <div class="flex">
+          <p
+            class="p-4 text-sm text-center flex tablet:items-center tablet:text-xl tablet:pl-8 desktop:leading-10 desktop:text-4xl desktop:p-8 desktop:pl-10">
+            To fight against forces which actively suppress the rights of others.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-10">
+      <h1
+        class="text-xl text-f-blue font-bold p-4 text-center tablet:text-left tablet:text-4xl tablet:p-8 desktop:text-6xl desktop:px-10 desktop:py-4">
+        What are HRPEC's current programs?</h1>
+      <p
+        class="px-4 text-sm tablet:text-lg tablet:px-8 tablet:pr-40 desktop:text-3xl desktop:px-10 desktop:pr-64 desktop:leading-10">
+        HRPEC joins the human rights community in the Philippines, both state and non-state actors, in responding to the
+        needs of the localities they are involved with and in lending its faculties for amplifying our advocacies
+        centered on our rights.<br><br> HRPEC holds educational discussions, film- screenings, forums, capacity-building
+        seminars for communities, and help desks for individuals whose rights are withheld from them. It does this with
+        the help of its broad network of cultural workers and the Philippine human rights community.</p>
+    </div>
+
+    <div class="my-6 bg-gradient-to-l to-f-blue from-t-blue" id="location">
+      <h1 class="pt-6 text-center text-4xl text-white font-bold tablet:text-5xl desktop:text-6xl">Our Location</h1>
+      <iframe class="w-full p-6"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.8516624126737!2d121.04984617422!3d14.646914285845014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70c75a172a5%3A0x94d1c20a63e7bc80!2sFil%20Garcia%20Tower%2C%20Kalayaan%20Ave%2C%20Diliman%2C%20Quezon%20City%2C%20Metro%20Manila!5e1!3m2!1sen!2sph!4v1690882801535!5m2!1sen!2sph"
+        width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+
+<footer
+  class="flex flex-col justify-between bg-f-1-blue py-2 px-4 tablet:flex-row tablet:py-10 tablet:px-8 desktop:py-14 desktop:px-16">
+  <div class="flex flex-row justify-center mb-4 tablet:flex-col desktop:mb-0">
+    <a href="/index.html">
+      <img class="w-24 pr-2 tablet:w-44 tablet:p-0 desktop:w-52" src="/assets/images/logo-no text.png">
+      <div class="text-white">
+        <p class="font-bold text-4xl tablet:text-3xl desktop:text-6xl">HRPEC</p>
+        <p class="-mt-3 desktop:-mt-5 text-xxxs font-bold  desktop:text-xs">HUMAN RIGHTS AND PEOPLE<br>EMPOWERMENT
+          CENTER</p>
+      </div>
+    </a>
+  </div>
+  <div class="tablet:mx-8 desktop:ml-16 desktop:mx-0">
+    <p
+      class="text-f-white text-sm text-center mb-2 tablet:text-lg tablet:text-left tablet:justify-between desktop:text-3xl desktop:mb-8">
+      We have so many exciting things going on, be the first to find out!</p>
+    <h1
+      class="flex text-f-white text-xl font-extrabold justify-center mb-2 tablet:text-sm tablet:bold tablet:justify-start tablet:mb-1 desktop:text-3xl">
+      SOCIALS</h1>
+    <div class="flex flex-row justify-center mb-4 tablet:justify-start desktop:mb-10">
+      <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
+          class="h-8 mx-2 tablet:ml-0 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/ig-icon.png"></a>
+      <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
+          class="h-8 mx-2 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/fb-icon.png"></a>
+      <a href="https://twitter.com/HRPECPhils" target="_blank"><img
+          class="h-8 mx-2 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/xffffff.svg"></a>
+      <a href="https://www.tiktok.com/@hrpecphils?lang=en" target="_blank"><img
+          class="h-8 mx-2 desktop:h-14 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/tiktok-icon.png"></a>
+    </div>
+    <p class="text-f-white text-center text-xs mb-4 tablet:text-xxs tablet:text-left desktop:text-base desktop:mb-8">©
+      2023 Human Rights and People Empowerment Center</p>
+    <div
+      class="flex flex-row text-f-white text-xxs justify-center border-t-2 pt-2 mb-4 tablet:justify-start desktop:text-sm">
+      <a class="mr-2 tablet:px-5 desktop:pr-6 duration-300 hover:text-s-blue" href="#">Developers</a>
+      <a class="mr-2 tablet:px-5 desktop:px-6 duration-300 hover:text-s-blue" href="/assets/copyrights.html">Copyrights</a>
+      <a class="mr-2 tablet:px-5 desktop:px-6 duration-300 hover:text-s-blue" href="/assets/privacy-policy.html">Privacy
+        Policy</a>
+      <a class="mr-2 tablet:px-5 desktop:px-6 duration-300 hover:text-s-blue" href="/assets/terms-of-use.html">Terms of
+        Use</a>
+    </div>
+  </div>
+  <div
+    class="flex flex-row justify-center text-white text-xs font-bold mb-4 tablet:flex-col tablet:justify-start text-right desktop:font-semibold desktop:text-base desktop:pl-10">
+    <div class="flex flex-col px-2">
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/about.html">ABOUT US</a>
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/about.html#location">LOCATION</a>
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/ourwork.html">OUR WORK</a>
+    </div>
+    <div class="flex flex-col px-2">
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/contactus.html">CONTACT US</a>
+      <a class="py-2 border-r-2 border-r-f-1-blue transition-700 pr-2 hover:text-s-blue hover:border-r-2 tablet:hover:border-r-s-blue"
+        href="/assets/updates.html">UPDATES</a>
+      <a class="text-base py-2 mt-2 desktop:text-2xl desktop:mt-8" href="/assets/donate.html"><button
+          class="bg-s-blue py-2 px-4 desktop:py-2 desktop:px-10 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">DONATE</button></a>
+    </div>
+  </div>
+</footer>
+
+</html>
