@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/assets/images/flat-logo.svg">
   <link href="/assets/css/output.css" rel="stylesheet" />
+  <link href="/assets/css/input.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <title>HRPEC</title>
@@ -14,9 +15,9 @@
 <body>
 
   <header class="">
-    <nav class="w-full fixed flex flex-row justify-between px-5 py-2 bg-white z-10">
+    <nav class="w-full fixed flex flex-row justify-between tablet:flex tablet:justify-center px-5 py-2 bg-white z-10">
       <div class="flex flex-row">
-        <a href="/index.html"><img class="h-8 me-2 tablet:h-12 desktop:h-16 " src="/assets/images/header-logo.svg"></a>
+        <a href="/index.html"><img class="header-logo h-8 me-2 tablet:h-12 desktop:h-16 " src="/assets/images/header-logo.svg"></a>
       </div>
       <div class="hidden desktop:flex flex-row items-center">
         <ul class="flex flex-row font-poppins">
@@ -127,7 +128,7 @@
 
     <section class="carousel mx-auto">
       <!-- Slider main container -->
-      <div class="swiper">
+      <div class="swiper ">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -285,31 +286,37 @@
             cultures come together to celebrate their shared humanity, it can help to break down barriers and promote
             understanding. This can create a more just and equitable society for everyone.</p>
         </div>
-        <div class="flex flex-col tablet:flex-row justify-center items-center align-middle mb-10 tablet:mb-20 mx-6">
+        <div class="flex flex-col tablet:flex-row justify-between items-center mb-10 tablet:mb-20 mx-10">
           <div class="flex flex-col w-4/5  tablet:w-full" style="margin-bottom: 20px;">
-            <img class="mx-6 mb-2" src="assets/images/pillar-1.svg">
+            <a href="/assets/ourwork.html#miyerkulet">
+              <img class="mx-6 mb-2" src="assets/images/pillar-1.svg">
+            </a>
             <h1
               class="font-poppins text-center font-bold text-xl tablet:text-base text-t-blue mx-10 desktop:text-3xl desktop:py-4">
               MYERKULET</h1>
               <p class="font-poppins mx-10 text-center text-xs tablet:text-xs text-t-blue desktop:text-base">is a regular
-                Wednesday event that provides a safe space for the arts and human rights advocacy.</p>
+                Wednesday event <br> that provides a safe space <br> for the arts and human rights advocacy.</p>
           </div>
           <div class="flex flex-col w-4/5  tablet:w-full" style="margin-bottom: 20px;">
-            <img class="mx-6 mb-2" src="assets/images/pillar-2.svg">
+            <a href="/assets/ourwork.html#sinesyudad">
+              <img class="mx-6 mb-2" src="assets/images/pillar-2.svg">
+            </a>
             <h1
-              class="font-poppins text-center font-bold text-xl tablet:text-base text-t-blue mx-10 desktop:text-3xl desktop:py-4">
+               class="font-poppins text-center font-bold text-xl tablet:text-base text-t-blue mx-10 desktop:text-3xl desktop:py-4">
               SINESYUDAD</h1>
             <p class="font-poppins mx-10 text-center text-xs tablet:text-xs text-t-blue desktop:text-base"> is a
-              community-based film screening event held in collaboration with local stakeholders, organizations, and institutions.
+              community-based <br> film screening event <br> held in collaboration with local stakeholders, <br>organizations, and institutions.
             </p>
           </div>
           <div class="flex flex-col w-4/5  tablet:w-full" style="margin-bottom: 20px;">
-            <img class="mx-6 mb-2" src="assets/images/pillar-3.svg">
+            <a href="/assets/ourwork.html#hrpec-chikahan">
+              <img class="mx-6 mb-2" src="assets/images/pillar-3.svg">
+            </a>
             <h1
               class="font-poppins text-center font-bold text-xl tablet:text-base text-t-blue mx-10 desktop:text-3xl desktop:py-4">
               HRPEC CHIKAHAN</h1>
             <p class="font-poppins mx-10 text-center text-xs tablet:text-xs text-t-blue desktop:text-base">is a
-              monthly roundtable discussion that brings together experts to address critical human rights issues and develop
+              monthly roundtable discussion <br> that brings together experts <br> to address critical human rights issues <br> and develop
               actionable recommendations.</p>
           </div>
         </div>
@@ -320,12 +327,18 @@
               HELP
               HRPEC CREATE A
               SOCIETY WHERE
-              EVERYONE'S RIGHTS ARE REALIZED, PROTECTED, AND GUARANTEED.</h1>
-            <p class="text-t-blue text-xs tablet:text-xl tablet:text">Donate to HRPEC today and help create a more just and
+              EVERYONE'S RIGHTS ARE REALIZED, PROTECTED, AND GUARANTEED.  </h1>
+            <p class="text-t-blue text-xs tablet:text-xl tablet:text text-center">Donate to HRPEC today and help create a more just and
               equitable society for all! Your donation will help us open spaces for dialogue and action on human rights issues,
               stand with us in the fight for human rights, and defend the rights of the most vulnerable and marginalized people in
               our society. Together, we can make a difference!</p>
-              </div>
+              
+              <a class="flex justify-center font-bold text-base py-2 mt-2 tablet:text-3xl desktop:text-4xl desktop:mt-8" href="assets/donate.html">
+                <button
+                class="bg-s-blue py-2 px-4 text-white desktop:py-2 desktop:px-10 border-2 border-s-blue hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
+                DONATE
+              </button>
+              </a>
               <!-- <div class="flex justify-center ">
                                                                                                                                 <a href="/assets/donate.html"><button
                     class="text-white bg-s-blue border-2 border-s-blue font-bold px-4 py-2 mr-4 tablet:text-3xl tablet:px-6 tablet:py-3 tablet:my-4 hover:text-black hover:border-blue-600 hover:bg-white hover:border-2 duration-200">DONATE</button></a>
@@ -340,6 +353,9 @@
                     src="assets/images/kulay-at-malay.jpg">
                   </div>
                   <div class="bg-t-blue w-full h-full">
+                    <div>
+                      <img src="/assets/images/sched.jpg">
+                    </div>
                     <div class="h-full w-full bg-white text-t-blue py-2">
                       <h1
                       class="text-4xl font-bold text-center -mt-5 tablet:text-5xl tablet:text-center tablet:extrabold desktop:text-7xl">
@@ -387,9 +403,9 @@
     const swiper = new Swiper('.swiper', {
       speed: 400,
       spaceBetween: 100,
-      // autoplay: {
-      //   delay: 3000,
-      // },
+      autoplay: {
+        delay: 3000,
+      },
       loop: 'true',
       // If we need pagination
       // paginatio/ },
