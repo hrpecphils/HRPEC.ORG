@@ -100,6 +100,14 @@
 
 }
 
+.the-board-border {
+  border-bottom: 2px solid #71CFEB;
+}
+
+.the-boards-name {
+  padding-bottom: 14px;
+}
+
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
   .swiper {
   height: 10%;
