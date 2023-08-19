@@ -95,7 +95,8 @@ module.exports = {
       },
       width: {
         '1/6': '18%',
-        '.30': '30%'
+        '.30': '30%',
+        '.67': '1700px'
       },
       display: ['group-focus']
     },
