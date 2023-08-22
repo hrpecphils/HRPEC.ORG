@@ -6,8 +6,8 @@
 @import 'tailwindcss/utilities';
 
 .main-content {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .hamburger {
@@ -64,22 +64,23 @@
   transition: all 0.50s ease-in-out;
 }
 
+.header {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
 .carousel {
   margin: auto;
 }
 
-.swiper {
-  height: 10%;
-  width: 70%;
+.swiper { 
+  height: 600px;
+  width: 100%;
 }
 
 .swiper-wrapper {
   height: auto;
-}
-
-.sample-slider [class^="swiper-button-"]{
-    width: 30px;
-    color: #71CFEB;
 }
 
 .help-hrpec {
@@ -99,17 +100,25 @@
     color: #71CFEB;
   }
 
-  .main-content {
+ .main-content {
   margin-left: 0px;
   margin-right: 0px;
  }
 
 }
 
+.the-board-border {
+  border-bottom: 2px solid #0E3341;
+}
+
+.the-boards-name {
+  padding-bottom: 14px;
+}
+
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
   .swiper {
   height: 10%;
-  width: 80%;
+  width: 100%;
  }
 
  .main-content {
@@ -122,4 +131,43 @@
   justify-content: center;
   text-align: center;
  }
+
+ .sample-slider [class^="swiper-button-"]{
+  width: 100px;
+  color: #71CFEB;
+}
+
+ .header-logo {
+  margin-right: 10px;
+}
+
+.the-board-images-right {
+  box-shadow: 40px -40px .5px #1B6580;
+}
+
+.the-board-images-left {
+  box-shadow: -40px 40px .5px #71CFEB;
+
+}
+
+}
+@media only screen and (min-width: 1224px){
+  .header {
+    padding-left: 80px;
+    padding-right: 80px;
+   }
+
+   .sample-slider [class^="swiper-button-"]{
+    width: 150px;
+    color: #71CFEB;
+  }
+
+  .the-board-images-right {
+  box-shadow: 40px -40px .5px #1B6580;
+}
+
+.the-board-images-left {
+  box-shadow: -40px 40px .5px #71CFEB;
+
+}
 }
