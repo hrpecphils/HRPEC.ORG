@@ -5,6 +5,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-content {
   margin-left: 100px;
   margin-right: 100px;
