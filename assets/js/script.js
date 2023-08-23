@@ -1,7 +1,7 @@
 var lastScrollTop;
 const btn = document.getElementById('menu-btn');
 const nav = document.getElementById('menu');
-const back2Top =document.getElementById('back2Top');
+const back2Top = document.getElementById('back2Top');
 const navbar = document.getElementById('navbar');
 
 btn.addEventListener('click', () => {
