@@ -75,7 +75,7 @@
 }
 
 .swiper { 
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
 
@@ -88,6 +88,14 @@
   justify-content: center;
   text-align: center;
  }
+
+.back2Top {
+  color: #1B6580;
+}
+
+.back2Top:hover {
+  color: #71CFEB;
+}
 
 @media only screen and (max-width: 767px) {
   .swiper {
@@ -169,5 +177,13 @@
 .the-board-images-left {
   box-shadow: -40px 40px .5px #71CFEB;
 
+}
+
+.footer-left-side {
+  padding-left: 100px;
+}
+
+.footer-right-side {
+  padding-right: 100px;
 }
 }
