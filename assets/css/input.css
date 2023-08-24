@@ -105,6 +105,14 @@ html {
   color: #1B6580;
 }
 
+.the-board-border {
+  border-bottom: 2px solid #0E3341;
+}
+
+.the-boards-name {
+  padding-bottom: 14px;
+}
+
 @media only screen and (max-width: 767px) {
   .swiper {
   height: 10%;
@@ -121,14 +129,17 @@ html {
   margin-right: 0px;
  }
 
-}
+ .go-to-top {
+  width: 40px;
+  height: 40px;
+  bottom: 1rem;
+  right: .8rem;
+ }
 
-.the-board-border {
-  border-bottom: 2px solid #0E3341;
-}
+ .go-to-top-arrow {
+  margin-left: 8px;
+ }
 
-.the-boards-name {
-  padding-bottom: 14px;
 }
 
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
@@ -166,7 +177,19 @@ html {
 
 }
 
+.go-to-top {
+  width: 40px;
+  height: 40px;
+  bottom: 1rem;
+  left: 1rem;
+ }
+
+ .go-to-top-arrow {
+  margin-left: 8px;
+ }
+
 }
+
 @media only screen and (min-width: 1224px){
   .header {
     padding-left: 80px;
@@ -194,4 +217,12 @@ html {
 .footer-right-side {
   padding-right: 100px;
 }
+
+.go-to-top {
+  padding: 16px;
+ }
+
+ .go-to-top-arrow {
+ }
+
 }
