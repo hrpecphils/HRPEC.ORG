@@ -761,16 +761,16 @@ video {
   margin-right: 1.5rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
 
 .mt-10{
   margin-top: 2.5rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .mt-4{
@@ -801,12 +801,8 @@ video {
   height: 3rem;
 }
 
-.h-2{
-  height: 0.5rem;
-}
-
-.h-24{
-  height: 6rem;
+.h-20{
+  height: 5rem;
 }
 
 .h-3\/4{
@@ -823,14 +819,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-1\/2{
-  height: 50%;
 }
 
 .w-1\/2{
@@ -853,8 +841,8 @@ video {
   width: 3rem;
 }
 
-.w-2{
-  width: 0.5rem;
+.w-20{
+  width: 5rem;
 }
 
 .w-24{
@@ -875,10 +863,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-20{
-  width: 5rem;
 }
 
 .grow{
@@ -1121,6 +1105,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1275,10 +1264,6 @@ video {
   font-size:  0.6rem;
 }
 
-.text-xxxs{
-  font-size:  0.4rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1386,6 +1371,10 @@ video {
   transition-duration: 300ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-content {
   margin-left: 100px;
   margin-right: 100px;
@@ -1454,7 +1443,7 @@ video {
 }
 
 .swiper {
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
 
@@ -1466,6 +1455,14 @@ video {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.back2Top {
+  color: #1B6580;
+}
+
+.back2Top:hover {
+  color: #71CFEB;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1545,6 +1542,14 @@ video {
 
   .the-board-images-left {
     box-shadow: -40px 40px .5px #71CFEB;
+  }
+
+  .footer-left-side {
+    padding-left: 100px;
+  }
+
+  .footer-right-side {
+    padding-right: 100px;
   }
 }
 
@@ -1629,6 +1634,14 @@ video {
 }
 
 @media (min-width: 320px){
+  .phone\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
+  .phone\:mb-4{
+    margin-bottom: 1rem;
+  }
+
   .phone\:w-auto{
     width: auto;
   }
@@ -1740,6 +1753,10 @@ video {
     height: 66.666667%;
   }
 
+  .tablet\:h-6{
+    height: 1.5rem;
+  }
+
   .tablet\:h-72{
     height: 18rem;
   }
@@ -1832,6 +1849,11 @@ video {
     padding: 2rem;
   }
 
+  .tablet\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .tablet\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1860,11 +1882,6 @@ video {
   .tablet\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .tablet\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .tablet\:py-2{
@@ -2048,11 +2065,6 @@ video {
     margin-right: 15%;
   }
 
-  .desktop\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .desktop\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
@@ -2066,6 +2078,11 @@ video {
   .desktop\:mx-4{
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .desktop\:mx-6{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .desktop\:-mb-10{
@@ -2096,14 +2113,6 @@ video {
     margin-top: -0px;
   }
 
-  .desktop\:-mt-5{
-    margin-top: -1.25rem;
-  }
-
-  .desktop\:mb-0{
-    margin-bottom: 0px;
-  }
-
   .desktop\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -2112,12 +2121,8 @@ video {
     margin-bottom: 1rem;
   }
 
-  .desktop\:mb-8{
-    margin-bottom: 2rem;
-  }
-
-  .desktop\:ml-16{
-    margin-left: 4rem;
+  .desktop\:ml-0{
+    margin-left: 0px;
   }
 
   .desktop\:ml-20{
@@ -2126,6 +2131,10 @@ video {
 
   .desktop\:mr-20{
     margin-right: 5rem;
+  }
+
+  .desktop\:mt-0{
+    margin-top: 0px;
   }
 
   .desktop\:mt-14{
@@ -2144,16 +2153,16 @@ video {
     display: none;
   }
 
-  .desktop\:h-14{
-    height: 3.5rem;
-  }
-
   .desktop\:h-16{
     height: 4rem;
   }
 
   .desktop\:h-5\/6{
     height: 83.333333%;
+  }
+
+  .desktop\:h-8{
+    height: 2rem;
   }
 
   .desktop\:h-96{
@@ -2176,8 +2185,8 @@ video {
     width: 75%;
   }
 
-  .desktop\:w-52{
-    width: 13rem;
+  .desktop\:w-32{
+    width: 8rem;
   }
 
   .desktop\:w-full{
@@ -2231,19 +2240,14 @@ video {
     padding-right: 3.5rem;
   }
 
-  .desktop\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .desktop\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
-  .desktop\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .desktop\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .desktop\:px-6{
@@ -2264,11 +2268,6 @@ video {
   .desktop\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .desktop\:py-14{
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 
   .desktop\:py-2{
@@ -2402,10 +2401,6 @@ video {
   .desktop\:text-9xl{
     font-size: 8rem;
     line-height: 1;
-  }
-
-  .desktop\:text-base{
-    font-size: 1rem;
   }
 
   .desktop\:text-lg{
