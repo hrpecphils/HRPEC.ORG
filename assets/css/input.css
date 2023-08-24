@@ -93,12 +93,16 @@ html {
   text-align: center;
  }
 
-.back2Top {
+.go-to-top {
+  color: #71CFEB;
+}
+
+.go-to-top:hover {
   color: #1B6580;
 }
 
-.back2Top:hover {
-  color: #71CFEB;
+.go-to-top-arrow:hover {
+  color: #1B6580;
 }
 
 @media only screen and (max-width: 767px) {
