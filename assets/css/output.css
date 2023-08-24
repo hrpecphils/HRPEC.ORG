@@ -933,6 +933,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1059,6 +1063,10 @@ video {
 
 .bg-opacity-80{
   --tw-bg-opacity: 0.8;
+}
+
+.bg-\[url\(\'\/assets\/images\/about-images\/bg5-side-f5f5f5\.png\'\)\]{
+  background-image: url('/assets/images/about-images/bg5-side-f5f5f5.png');
 }
 
 .bg-gradient-to-t{
@@ -1578,7 +1586,19 @@ html {
     margin-left: 8px;
   }
 
+  .first-in-main-content {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   .second-in-main-content {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .second-in-main-content-about {
+    width: 100%;
+    height: 100%;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -1643,6 +1663,11 @@ html {
     padding: 16px;
   }
 
+  .first-in-main-content {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
   .second-in-main-content {
     padding-left: 200px;
     padding-right: 200px;
@@ -1674,6 +1699,10 @@ html {
 
   .fifth-in-main-content-button {
     padding-bottom: 30px;
+  }
+
+  .vission {
+    background-color: #1B6580;
   }
 }
 
