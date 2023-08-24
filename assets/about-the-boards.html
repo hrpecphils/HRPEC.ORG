@@ -375,13 +375,7 @@
 
     </section>
   </section>
-  <div class="fixed z-30 bottom-0 right-0 mr-6 mb-6">
-    <a class="back2Top" href="#" class="hidden bg-s-blue py-2 px-4 desktop:py-2 desktop:px-10 border-2 border-s-blue hover:text-blue-800 hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
-      <svg class="h-20 w-20 text-blue-800"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
-         <polyline points="17 11 12 6 7 11" />  <polyline points="17 18 12 13 7 18" /></svg>
-    </a>
-    <script src="/assets/js/script.js"></script>
-  </div>
+ 
 </body>
 
 <footer
@@ -426,19 +420,36 @@
         </div>
       </div>
       </div>
-      
-      <div class="fixed z-30 bottom-0 right-0 mr-6 mb-6">
-        <a class="back2Top" href="#"
-          class="hidden bg-s-blue py-2 px-4 desktop:py-2 desktop:px-10 border-2 border-s-blue hover:text-blue-800 hover:border-blue-600 hover:bg-white hover:border-2 duration-200">
-          <svg class="h-20 w-20 text-" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="17 11 12 6 7 11" />
-            <polyline points="17 18 12 13 7 18" />
-          </svg>
-        </a>
-        <script src="/assets/js/script.js"></script>
-  </div>
-
+      <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+      class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-f-blue hover:bg-purple-700 text-white text-lg font-semibold transition-colors duration-300">
+      <svg class="h-6 w-6 text-blue-300"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="17 11 12 6 7 11" />  <polyline points="17 18 12 13 7 18" /></svg>
+      <span class="sr-only">Go to top</span>
+    </button>
+    
+    <script>
+    
+      var toTopButton = document.getElementById("to-top-button");
+    
+    
+      if (toTopButton) {
+    
+        
+          window.onscroll = function() {
+              if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                  toTopButton.classList.remove("hidden");
+              } else {
+                  toTopButton.classList.add("hidden");
+              }
+          };
+    
+          window.goToTop = function() {
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+              });
+          };
+      }
+    </script>
   <div
     class="footer-right-side flex flex-row justify-center text-white text-xs font-bold phone:mb-2 tablet:flex-col tablet:justify-start text-right desktop:font-semibold desktop:text-xs">
     <div class="flex flex-col px-2">
