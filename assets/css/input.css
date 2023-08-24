@@ -9,10 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-content {
+/* .main-content {
   margin-left: 100px;
   margin-right: 100px;
-}
+} */
 
 .hamburger {
   cursor: pointer;
@@ -220,9 +220,6 @@ html {
 
 .go-to-top {
   padding: 16px;
- }
-
- .go-to-top-arrow {
  }
 
 }

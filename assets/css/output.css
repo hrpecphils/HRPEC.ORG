@@ -1417,10 +1417,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-content {
+/* .main-content {
   margin-left: 100px;
   margin-right: 100px;
-}
+} */
 
 .hamburger {
   cursor: pointer;
@@ -1622,9 +1622,6 @@ html {
 
   .go-to-top {
     padding: 16px;
-  }
-
-  .go-to-top-arrow {
   }
 }
 
@@ -1894,6 +1891,10 @@ html {
 
   .tablet\:bg-\[url\(\'\/assets\/images\/about-images\/about-us-bg\.svg\'\)\]{
     background-image: url('/assets/images/about-images/about-us-bg.svg');
+  }
+
+  .tablet\:bg-\[url\(\'\/assets\/images\/about-images\/bg5-side-f5f5f5\.png\'\)\]{
+    background-image: url('/assets/images/about-images/bg5-side-f5f5f5.png');
   }
 
   .tablet\:bg-\[url\(\'\/assets\/images\/contact-us-images\/contact-us-bg\.svg\'\)\]{
