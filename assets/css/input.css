@@ -188,6 +188,11 @@ html {
   padding-right: 70px;
 }
 
+.first-in-main-content-our-boards {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .second-in-main-content {
   padding-left: 70px;
   padding-right: 70px;
@@ -270,6 +275,11 @@ html {
  .first-in-main-content {
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.first-in-main-content-our-boards {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
  .second-in-main-content {
