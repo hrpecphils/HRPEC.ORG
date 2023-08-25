@@ -101,5 +101,5 @@ module.exports = {
       display: ['group-focus']
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 };
