@@ -1902,6 +1902,19 @@ html {
   .phone\:self-center{
     align-self: center;
   }
+
+  .phone\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .phone\:pb-8{
+    padding-bottom: 2rem;
+  }
+
+  .phone\:pt-4{
+    padding-top: 1rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -2147,6 +2160,16 @@ html {
     padding-bottom: 1rem;
   }
 
+  .tablet\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .tablet\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .tablet\:pb-0{
     padding-bottom: 0px;
   }
@@ -2193,6 +2216,14 @@ html {
 
   .tablet\:pt-8{
     padding-top: 2rem;
+  }
+
+  .tablet\:pl-2{
+    padding-left: 0.5rem;
+  }
+
+  .tablet\:pr-2{
+    padding-right: 0.5rem;
   }
 
   .tablet\:text-left{
@@ -2476,6 +2507,10 @@ html {
 
   .desktop\:p-8{
     padding: 2rem;
+  }
+
+  .desktop\:p-0{
+    padding: 0px;
   }
 
   .desktop\:px-10{
