@@ -251,11 +251,16 @@ html {
 }
 
 .footer-left-side {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 
 .footer-right-side {
-  padding-right: 100px;
+  padding-right: 200px;
+}
+
+.footer-middle-side {
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .go-to-top {
