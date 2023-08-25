@@ -1233,10 +1233,6 @@ video {
   padding-top: 1rem;
 }
 
-.pt-6{
-  padding-top: 1.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1693,6 +1689,13 @@ html {
     padding-right: 70px;
   }
 
+  .third-in-main-content-pillars {
+    padding-left: 70px;
+    padding-right: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .second-pillar-img {
     margin-left: 8px;
     margin-right: 8px;
@@ -1769,6 +1772,11 @@ html {
   }
 
   .third-in-main-content {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .third-in-main-content-pillars {
     padding-left: 200px;
     padding-right: 200px;
   }
@@ -2115,6 +2123,11 @@ html {
     padding: 2rem;
   }
 
+  .tablet\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .tablet\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -2160,11 +2173,6 @@ html {
     padding-bottom: 1rem;
   }
 
-  .tablet\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .tablet\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -2186,12 +2194,16 @@ html {
     padding-bottom: 1.5rem;
   }
 
+  .tablet\:pl-2{
+    padding-left: 0.5rem;
+  }
+
   .tablet\:pl-4{
     padding-left: 1rem;
   }
 
-  .tablet\:pl-8{
-    padding-left: 2rem;
+  .tablet\:pr-2{
+    padding-right: 0.5rem;
   }
 
   .tablet\:pr-36{
@@ -2200,10 +2212,6 @@ html {
 
   .tablet\:pr-4{
     padding-right: 1rem;
-  }
-
-  .tablet\:pr-8{
-    padding-right: 2rem;
   }
 
   .tablet\:pt-32{
@@ -2216,14 +2224,6 @@ html {
 
   .tablet\:pt-8{
     padding-top: 2rem;
-  }
-
-  .tablet\:pl-2{
-    padding-left: 0.5rem;
-  }
-
-  .tablet\:pr-2{
-    padding-right: 0.5rem;
   }
 
   .tablet\:text-left{
@@ -2425,6 +2425,14 @@ html {
     margin-top: 2rem;
   }
 
+  .desktop\:-mb-6{
+    margin-bottom: -1.5rem;
+  }
+
+  .desktop\:-mb-4{
+    margin-bottom: -1rem;
+  }
+
   .desktop\:flex{
     display: flex;
   }
@@ -2489,6 +2497,10 @@ html {
     align-items: flex-start;
   }
 
+  .desktop\:p-0{
+    padding: 0px;
+  }
+
   .desktop\:p-10{
     padding: 2.5rem;
   }
@@ -2507,10 +2519,6 @@ html {
 
   .desktop\:p-8{
     padding: 2rem;
-  }
-
-  .desktop\:p-0{
-    padding: 0px;
   }
 
   .desktop\:px-10{
@@ -2702,6 +2710,10 @@ html {
 
   .desktop\:text-xs{
     font-size: 0.7rem;
+  }
+
+  .desktop\:text-5\.5xl{
+    font-size: 3.563rem;
   }
 
   .desktop\:font-semibold{
