@@ -809,12 +809,20 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -847,6 +855,22 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-16{
+  height: 4rem;
+}
+
+.h-1\/4{
+  height: 25%;
+}
+
+.h-1\/2{
+  height: 50%;
 }
 
 .w-1\/2{
@@ -897,12 +921,28 @@ video {
   width: 100%;
 }
 
+.w-1\/3{
+  width: 33.333333%;
+}
+
 .max-w-full{
   max-width: 100%;
 }
 
 .grow{
   flex-grow: 1;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -935,6 +975,10 @@ video {
 
 .justify-evenly{
   justify-content: space-evenly;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -1104,6 +1148,16 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -1118,6 +1172,14 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-2{
@@ -1359,6 +1421,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-s-white{
+  --tw-text-opacity: 1;
+  color: rgb(217 217 217 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -1382,6 +1449,12 @@ video {
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1652,11 +1725,16 @@ html {
   }
 
   .footer-left-side {
-    padding-left: 100px;
+    padding-left: 200px;
   }
 
   .footer-right-side {
-    padding-right: 100px;
+    padding-right: 200px;
+  }
+
+  .footer-middle-side {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   .go-to-top {
@@ -1787,6 +1865,11 @@ html {
 }
 
 @media (min-width: 320px){
+  .phone\:mx-6{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .phone\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -1811,11 +1894,6 @@ html {
 
   .tablet\:m-14{
     margin: 3.5rem;
-  }
-
-  .tablet\:mx-\.05{
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .tablet\:mx-10{
@@ -1910,6 +1988,18 @@ html {
     height: 18rem;
   }
 
+  .tablet\:h-1\/2{
+    height: 50%;
+  }
+
+  .tablet\:h-1\/4{
+    height: 25%;
+  }
+
+  .tablet\:h-48{
+    height: 12rem;
+  }
+
   .tablet\:w-1\/2{
     width: 50%;
   }
@@ -1932,6 +2022,14 @@ html {
 
   .tablet\:w-full{
     width: 100%;
+  }
+
+  .tablet\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tablet\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .tablet\:flex-row{
@@ -1968,10 +2066,6 @@ html {
 
   .tablet\:bg-\[url\(\'\/assets\/images\/about-images\/about-us-bg\.svg\'\)\]{
     background-image: url('/assets/images/about-images/about-us-bg.svg');
-  }
-
-  .tablet\:bg-\[url\(\'\/assets\/images\/about-images\/bg5-side-f5f5f5\.png\'\)\]{
-    background-image: url('/assets/images/about-images/bg5-side-f5f5f5.png');
   }
 
   .tablet\:bg-\[url\(\'\/assets\/images\/contact-us-images\/contact-us-bg\.svg\'\)\]{
@@ -2077,10 +2171,6 @@ html {
 
   .tablet\:pr-4{
     padding-right: 1rem;
-  }
-
-  .tablet\:pr-40{
-    padding-right: 10rem;
   }
 
   .tablet\:pr-8{
@@ -2298,6 +2388,10 @@ html {
     margin-top: 2rem;
   }
 
+  .desktop\:mt-2{
+    margin-top: 0.5rem;
+  }
+
   .desktop\:flex{
     display: flex;
   }
@@ -2344,6 +2438,10 @@ html {
 
   .desktop\:w-full{
     width: 100%;
+  }
+
+  .desktop\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .desktop\:flex-row{
@@ -2468,10 +2566,6 @@ html {
 
   .desktop\:pr-6{
     padding-right: 1.5rem;
-  }
-
-  .desktop\:pr-64{
-    padding-right: 16rem;
   }
 
   .desktop\:pr-8{
