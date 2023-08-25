@@ -9,10 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-content {
+/* .main-content {
   margin-left: 100px;
   margin-right: 100px;
-}
+} */
 
 .hamburger {
   cursor: pointer;
@@ -93,12 +93,24 @@ html {
   text-align: center;
  }
 
-.back2Top {
+.go-to-top {
+  color: #71CFEB;
+}
+
+.go-to-top:hover {
   color: #1B6580;
 }
 
-.back2Top:hover {
-  color: #71CFEB;
+.go-to-top-arrow:hover {
+  color: #1B6580;
+}
+
+.the-board-border {
+  border-bottom: 2px solid #0E3341;
+}
+
+.the-boards-name {
+  padding-bottom: 14px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -117,25 +129,23 @@ html {
   margin-right: 0px;
  }
 
-}
+ .go-to-top {
+  width: 40px;
+  height: 40px;
+  bottom: 1rem;
+  right: .8rem;
+ }
 
-.the-board-border {
-  border-bottom: 2px solid #0E3341;
-}
+ .go-to-top-arrow {
+  margin-left: 8px;
+ }
 
-.the-boards-name {
-  padding-bottom: 14px;
 }
 
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
   .swiper {
   height: 10%;
   width: 100%;
- }
-
- .main-content {
-  margin-left: 30px;
-  margin-right: 30px;
  }
 
  .help-hrpec {
@@ -162,11 +172,68 @@ html {
 
 }
 
+.go-to-top {
+  width: 40px;
+  height: 40px;
+  bottom: 1rem;
+  left: 1rem;
+ }
+
+ .go-to-top-arrow {
+  margin-left: 8px;
+ }
+
+ .first-in-main-content {
+  padding-left: 70px;
+  padding-right: 70px;
 }
+
+.second-in-main-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.second-in-main-content-about {
+  width: 100%;
+  height: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.third-in-main-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.second-pillar-img {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.fourth-in-main-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.fourth-in-main-content-button {
+  margin-top: 20px;
+}
+
+.fifth-in-main-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.fifth-in-main-content-button {
+  padding-bottom: 20px;
+}
+
+}
+
 @media only screen and (min-width: 1224px){
   .header {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
    }
 
    .sample-slider [class^="swiper-button-"]{
@@ -184,10 +251,62 @@ html {
 }
 
 .footer-left-side {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 
 .footer-right-side {
-  padding-right: 100px;
+  padding-right: 200px;
+}
+
+.footer-middle-side {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.go-to-top {
+  padding: 16px;
+ }
+
+ .first-in-main-content {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+ .second-in-main-content {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.third-in-main-content {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.second-pillar-img {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.fourth-in-main-content {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.fourth-in-main-content-button {
+  margin-top: 20px;
+}
+
+.fifth-in-main-content {
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
+.fifth-in-main-content-button {
+  padding-bottom: 30px;
+}
+
+.vission {
+  background-color: #1B6580;
 }
 }
