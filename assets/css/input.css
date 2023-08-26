@@ -140,6 +140,13 @@ html {
   margin-left: 8px;
  }
 
+ .miyerkulet-images {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
@@ -240,6 +247,13 @@ html {
   padding-bottom: 20px;
 }
 
+.miyerkulet-images {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 @media only screen and (min-width: 1224px){
@@ -330,5 +344,12 @@ html {
 
 .vission {
   background-color: #1B6580;
+}
+
+.miyerkulet-images {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 }
