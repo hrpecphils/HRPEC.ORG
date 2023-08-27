@@ -673,8 +673,8 @@ video {
   margin: 1.5rem;
 }
 
-.m-10{
-  margin: 2.5rem;
+.m-2{
+  margin: 0.5rem;
 }
 
 .mx-\.10{
@@ -916,6 +916,10 @@ video {
   width: 100%;
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
 .max-w-full{
   max-width: 100%;
 }
@@ -1064,6 +1068,11 @@ video {
   border-color: rgb(14 51 65 / var(--tw-border-opacity));
 }
 
+.border-f-blue{
+  --tw-border-opacity: 1;
+  border-color: rgb(27 101 128 / var(--tw-border-opacity));
+}
+
 .border-r-f-1-blue{
   --tw-border-opacity: 1;
   border-right-color: rgb(22 31 35 / var(--tw-border-opacity));
@@ -1171,10 +1180,6 @@ video {
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-8{
-  padding: 2rem;
 }
 
 .p-10{
@@ -1991,9 +1996,24 @@ html {
     margin: 2.5rem;
   }
 
+  .phone\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .phone\:mx-6{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .phone\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .phone\:mx-8{
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .phone\:mb-2{
@@ -2110,10 +2130,6 @@ html {
 
   .tablet\:mt-10{
     margin-top: 2.5rem;
-  }
-
-  .tablet\:mt-6{
-    margin-top: 1.5rem;
   }
 
   .tablet\:flex{
@@ -2272,6 +2288,10 @@ html {
 
   .tablet\:p-8{
     padding: 2rem;
+  }
+
+  .tablet\:p-2{
+    padding: 0.5rem;
   }
 
   .tablet\:px-0{
@@ -2555,6 +2575,11 @@ html {
     margin-bottom: 9rem;
   }
 
+  .desktop\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .desktop\:-mb-11{
     margin-bottom: -2.75rem;
   }
@@ -2609,10 +2634,6 @@ html {
 
   .desktop\:mt-14{
     margin-top: 3.5rem;
-  }
-
-  .desktop\:mt-8{
-    margin-top: 2rem;
   }
 
   .desktop\:flex{
