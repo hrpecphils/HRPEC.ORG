@@ -673,6 +673,10 @@ video {
   margin: 1.5rem;
 }
 
+.m-10{
+  margin: 2.5rem;
+}
+
 .mx-\.10{
   margin-left: 10%;
   margin-right: 10%;
@@ -716,6 +720,11 @@ video {
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .-mb-1{
@@ -1164,6 +1173,14 @@ video {
   padding: 1.5rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1172,11 +1189,6 @@ video {
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .px-3{
@@ -1254,10 +1266,6 @@ video {
 
 .pb-2{
   padding-bottom: 0.5rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
 }
 
 .pb-4{
@@ -2291,6 +2299,11 @@ html {
     padding-right: 0.5rem;
   }
 
+  .tablet\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .tablet\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2346,11 +2359,6 @@ html {
     padding-bottom: 2rem;
   }
 
-  .tablet\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .tablet\:pb-0{
     padding-bottom: 0px;
   }
@@ -2361,6 +2369,10 @@ html {
 
   .tablet\:pb-2{
     padding-bottom: 0.5rem;
+  }
+
+  .tablet\:pb-20{
+    padding-bottom: 5rem;
   }
 
   .tablet\:pb-4{
@@ -2401,10 +2413,6 @@ html {
 
   .tablet\:pt-8{
     padding-top: 2rem;
-  }
-
-  .tablet\:pb-20{
-    padding-bottom: 5rem;
   }
 
   .tablet\:text-left{
