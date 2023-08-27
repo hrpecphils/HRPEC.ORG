@@ -601,6 +601,10 @@ video {
   border-width: 0;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .static{
   position: static;
 }
@@ -673,10 +677,6 @@ video {
   margin: 1.5rem;
 }
 
-.m-2{
-  margin: 0.5rem;
-}
-
 .mx-\.10{
   margin-left: 10%;
   margin-right: 10%;
@@ -705,6 +705,11 @@ video {
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .my-3{
@@ -844,10 +849,6 @@ video {
   height: 3.5rem;
 }
 
-.h-20{
-  height: 5rem;
-}
-
 .h-3\/4{
   height: 75%;
 }
@@ -892,12 +893,12 @@ video {
   width: 33.333333%;
 }
 
-.w-20{
-  width: 5rem;
-}
-
 .w-24{
   width: 6rem;
+}
+
+.w-3\/4{
+  width: 75%;
 }
 
 .w-36{
@@ -916,10 +917,6 @@ video {
   width: 100%;
 }
 
-.w-3\/4{
-  width: 75%;
-}
-
 .max-w-full{
   max-width: 100%;
 }
@@ -930,6 +927,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -986,6 +987,10 @@ video {
 
 .self-end{
   align-self: flex-end;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .overflow-scroll{
@@ -1068,11 +1073,6 @@ video {
   border-color: rgb(14 51 65 / var(--tw-border-opacity));
 }
 
-.border-f-blue{
-  --tw-border-opacity: 1;
-  border-color: rgb(27 101 128 / var(--tw-border-opacity));
-}
-
 .border-r-f-1-blue{
   --tw-border-opacity: 1;
   border-right-color: rgb(22 31 35 / var(--tw-border-opacity));
@@ -1118,8 +1118,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-60{
+  --tw-bg-opacity: 0.6;
+}
+
 .bg-opacity-80{
   --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-90{
+  --tw-bg-opacity: 0.9;
 }
 
 .bg-\[url\(\'\/assets\/images\/about-images\/bg5-side-f5f5f5\.png\'\)\]{
@@ -1180,10 +1188,6 @@ video {
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-10{
-  padding: 2.5rem;
 }
 
 .px-10{
@@ -1303,6 +1307,10 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-left{
@@ -1499,12 +1507,36 @@ video {
   transition-delay: 200ms;
 }
 
+.delay-300{
+  transition-delay: 300ms;
+}
+
+.delay-500{
+  transition-delay: 500ms;
+}
+
+.delay-100{
+  transition-delay: 100ms;
+}
+
+.delay-150{
+  transition-delay: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-700{
+  transition-duration: 700ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scrollbar-thin{
@@ -1668,6 +1700,10 @@ html {
 
 .the-boards-name {
   padding-bottom: 14px;
+}
+
+.developer-cards:hover .text-after {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1918,8 +1954,22 @@ html {
   display: flex;
 }
 
+.hover\:visible:hover{
+  visibility: visible;
+}
+
 .hover\:flex:hover{
   display: flex;
+}
+
+.hover\:scale-125:hover{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:transform:hover{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border-2:hover{
@@ -1986,6 +2036,10 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:duration-300:hover{
+  transition-duration: 300ms;
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2004,16 +2058,6 @@ html {
   .phone\:mx-6{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-  }
-
-  .phone\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .phone\:mx-8{
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .phone\:mb-2{
@@ -2288,10 +2332,6 @@ html {
 
   .tablet\:p-8{
     padding: 2rem;
-  }
-
-  .tablet\:p-2{
-    padding: 0.5rem;
   }
 
   .tablet\:px-0{
@@ -2570,14 +2610,14 @@ html {
     margin-right: 1.5rem;
   }
 
-  .desktop\:my-36{
-    margin-top: 9rem;
-    margin-bottom: 9rem;
-  }
-
   .desktop\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+  }
+
+  .desktop\:my-36{
+    margin-top: 9rem;
+    margin-bottom: 9rem;
   }
 
   .desktop\:-mb-11{
