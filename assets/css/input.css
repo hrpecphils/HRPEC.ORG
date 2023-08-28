@@ -74,9 +74,6 @@ html {
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
-.carousel {
-  margin: auto;
-}
 
 .swiper { 
   height: 500px;
@@ -118,6 +115,10 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
+  .carousel {
+  margin-top: 50px;
+  }
+
   .swiper {
   height: 10%;
   width: 100%;
@@ -154,6 +155,10 @@ html {
 }
 
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
+  .carousel {
+  margin-top: 60px;
+  }
+  
   .swiper {
   height: 10%;
   width: 100%;
@@ -261,6 +266,10 @@ html {
 }
 
 @media only screen and (min-width: 1224px){
+  .carousel {
+  margin-top: 90px;
+  }
+
   .header {
     padding-left: 120px;
     padding-right: 120px;
