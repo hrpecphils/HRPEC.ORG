@@ -112,7 +112,7 @@
         <div class="tablet:hidden">
           <div id="menu"
             class="absolute flex-col justify-center text-center items-center hidden self-end py-8 mt-4 text-xs space-y-6 font-semibold bg-white phone:w-auto phone:self-center left-6 right-6 drop-shadow-md">
-            <a class="text-f-blue underline" href="/index.html">HOME</a>
+            <a class="" href="/index.html">HOME</a>
 
             <select class="" name="links" id="" size="1" onchange="window.location.href=this.value;">
               <option class="text-xxs text-center font-semibold" value="">ABOUT</option>
@@ -149,268 +149,489 @@
   <section
     class="first-in-main-content my-20 phone:mx-4 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10">
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
       <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/bas.jpg">
+        <div
+          class="show-modal1 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+          <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/bas.jpg">
         </div>
         <div class="pt-4">
           <h1 class="text-center font-bold text-2xl">Bruce Adrian C. Samonte</h1>
           <h1 class="text-center font-semibold underline">Project Manager</h1>
         </div>
       </div>
+    </div>
+    <div
+      class="modal1 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
 
-      <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-4 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
-        </div>
+    <div
+    class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+    <div
+    class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-10 ">
+    <h3 class="font-bold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">Project Manager</h3>
+    <button class="font-extrabold text-t-blue close-modal1 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+    </div>
+    <div
+      class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+      <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/bas.jpg">
+      <p class="mb-4 pb-4 border-b-2 border-t-blue">
+        Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+        aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+        quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+        Expedita quae distinctio impedit!
+      </p>
 
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
-        </div>
-
+    <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+      <a href="#" target="_blank"><img
+          class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/ig-icon.png"></a>
+      <a href="#" target="_blank"><img
+          class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+      <a href="#" target="_blank"><img
+          class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/fb-icon.png"></a>
+      <a href="#" target="_blank"><img
+          class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/xffffff.svg"></a>
+      <a href="#" target="_blank"><img
+          class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/tiktok-icon.png"></a>
       </div>
     </div>
+    </div>
+    </div>
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
       <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/men.jpg">
+        <div
+          class="show-modal2 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+          <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/men.jpg">
         </div>
         <div class="pt-4">
           <h1 class="text-center font-bold text-2xl">Myke Ezekiel U. Narvasa</h1>
           <h1 class="text-center font-semibold underline">Software Engineer</h1>
         </div>
       </div>
-
+    </div>
+    <div
+      class="modal2 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
+    
       <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-4 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
+        class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+        <div
+          class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-10 ">
+          <h3 class="font-bold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">Software Engineer</h3>
+          <button class="font-extrabold text-t-blue close-modal2 text-xl tablet:text-3xl desktop:text-5xl">X</button>
         </div>
-
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
+        <div
+          class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+          <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/men.jpg">
+          <p class="mb-4 pb-4 border-b-2 border-t-blue">
+            Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+            aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+            quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+            Expedita quae distinctio impedit!
+          </p>
+    
+          <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/ig-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/fb-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/xffffff.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/tiktok-icon.png"></a>
+            </div>
         </div>
-
       </div>
     </div>
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
       <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/jfb.jpg">
+        <div
+          class="show-modal3 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+          <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/jfb.jpg">
         </div>
         <div class="pt-4">
           <h1 class="text-center font-bold text-2xl">John Felix D. Ballon</h1>
           <h1 class="text-center font-semibold underline">Programmer</h1>
         </div>
       </div>
-
+    </div>
+    <div
+      class="modal3 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
+    
       <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-6 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
+        class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+        <div
+          class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-10 ">
+          <h3 class="font-bold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">Programmer</h3>
+          <button class="font-extrabold text-t-blue close-modal3 text-xl tablet:text-3xl desktop:text-5xl">X</button>
         </div>
-
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
+        <div
+          class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+          <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/jfb.jpg">
+          <p class="mb-4 pb-4 border-b-2 border-t-blue">
+            Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+            aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+            quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+            Expedita quae distinctio impedit!
+          </p>
+    
+          <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/ig-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/fb-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/xffffff.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/tiktok-icon.png"></a>
+            </div>
         </div>
-
       </div>
     </div>
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
       <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/jll.jpg">
+        <div
+          class="show-modal4 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+          <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/jll.jpg">
         </div>
         <div class="pt-4">
           <h1 class="text-center font-bold text-2xl">John Leonard M. Leaño</h1>
           <h1 class="text-center font-semibold underline">Assistant Software Engineer</h1>
         </div>
       </div>
-
+    </div>
+    <div
+      class="modal4 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
+    
       <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-4 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
+        class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+        <div
+          class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-8 ">
+          <h3 class="font-bold text-lg text-t-blue tablet:text-4xl desktop:text-6xl">Assistant Software Engineer</h3>
+          <button class="font-extrabold text-t-blue close-modal4 text-xl tablet:text-3xl desktop:text-5xl">X</button>
         </div>
-
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
+        <div
+          class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+          <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/jll.jpg">
+          <p class="mb-4 pb-4 border-b-2 border-t-blue">
+            Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+            aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+            quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+            Expedita quae distinctio impedit!
+          </p>
+    
+          <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/ig-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/fb-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/xffffff.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/tiktok-icon.png"></a>
+            </div>
         </div>
-
       </div>
     </div>
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
       <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/ek.jpg">
+        <div
+          class="show-modal5 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+          <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/ek.jpg">
         </div>
         <div class="pt-4">
           <h1 class="text-center font-bold text-2xl">Evehn P. Kadusale</h1>
           <h1 class="text-center font-semibold underline">Programmer</h1>
         </div>
       </div>
-
+    </div>
+    <div
+      class="modal5 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
+    
       <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-4 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
+        class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+        <div
+          class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-10 ">
+          <h3 class="font-bold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">Programmer</h3>
+          <button class="font-extrabold text-t-blue close-modal5 text-xl tablet:text-3xl desktop:text-5xl">X</button>
         </div>
+        <div
+          class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+          <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/ek.jpg">
+          <p class="mb-4 pb-4 border-b-2 border-t-blue">
+            Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+            aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+            quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+            Expedita quae distinctio impedit!
+          </p>
+    
+          <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/ig-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/fb-icon.png"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/xffffff.svg"></a>
+            <a href="#" target="_blank"><img
+                class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+                src="/assets/images/footer-images/tiktok-icon.png"></a>
+            </div>
+            </div>
+            </div>
+    </div>
+    
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+      <div class="">
+    <div
+      class="show-modal6 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+      <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/cs.jpg">
+    </div>
+    <div class="pt-4">
+      <h1 class="text-center font-bold text-2xl">Charles T. Sebidos</h1>
+      <h1 class="text-center font-semibold underline">Programmer</h1>
+    </div>
+    </div>
+    </div>
+    <div
+    class="modal6 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
+    <div
+    class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+    <div
+      class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-10 ">
+      <h3 class="font-bold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">Programmer</h3>
+      <button class="font-extrabold text-t-blue close-modal6 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+    </div>
+    <div
+      class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+      <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/cs.jpg">
+      <p class="mb-4 pb-4 border-b-2 border-t-blue">
+        Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+        aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+        quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+        Expedita quae distinctio impedit!
+      </p>
 
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
-        </div>
-
-      </div>
+      <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+        <a href="#" target="_blank"><img
+            class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+            src="/assets/images/footer-images/ig-icon.png"></a>
+        <a href="#" target="_blank"><img
+            class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+            src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+        <a href="#" target="_blank"><img
+            class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+            src="/assets/images/footer-images/fb-icon.png"></a>
+        <a href="#" target="_blank"><img
+            class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+            src="/assets/images/footer-images/xffffff.svg"></a>
+    <a href="#" target="_blank"><img
+        class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+        src="/assets/images/footer-images/tiktok-icon.png"></a>
+    </div>
+    </div>
+    </div>
     </div>
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+    <div class="relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
       <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/cs.jpg">
-        </div>
-        <div class="pt-4">
-          <h1 class="text-center font-bold text-2xl">Charles T. Sebidos</h1>
-          <h1 class="text-center font-semibold underline">Programmer</h1>
-        </div>
-      </div>
-
-      <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-4 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
-        </div>
-
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
-        </div>
-
-      </div>
+    <div
+      class="show-modal7 bg-s-blue rounded-2xl flex justify-center overflow-hidden hover:shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
+      <img class="w-full hover:scale-125 duration-300 ease-in-out" src="/assets/images/developers/rn.jpg">
     </div>
+    <div class="pt-4">
+      <h1 class="text-center font-bold text-2xl">Rogie C. Nepomuceno jr.</h1>
+      <h1 class="text-center font-semibold underline">Programmer</h1>
+    </div>
+    </div>
+    </div>
+    <div
+    class="modal7 fixed h-full w-full  left-0 top-0 flex justify-center items-center hidden z-20 bg-s-blue  bg-opacity-80">
+    <div
+    class=" rounded shadow-lg w-full h-full px-6 py-10 tablet:px-12 tablet:py-10 tablet:h-full desktop:px-12 desktop:py-10 desktop:h-full overflow-y-scroll">
+    <div
+    class="border-b py-2 pr-2 flex justify-between items-center -mb-4 tablet:py-4 tablet:pr-4 tablet:-mb-6  desktop:pr-8 desktop:-mb-10 ">
+    <h3 class="font-bold text-2xl text-t-blue tablet:text-6xl desktop:text-8xl">Programmer</h3>
+    <button class="font-extrabold text-t-blue close-modal7 text-xl tablet:text-3xl desktop:text-5xl">X</button>
+    </div>
+    <div
+      class="miyerkulet-images bg-s-white font-merriweather border-2 border-t-blue text-xs text-left text-black px-10 py-4 tablet:text-base tablet:px-40 tablet:py-4 desktop:text-xl desktop:px-40 desktop:py-6">
+      <img class="w-full desktop:w-3/4 my-4" src="/assets/images/developers/rn.jpg">
+      <p class="mb-4 pb-4 border-b-2 border-t-blue">
+        Isang mabuting mag aaral ng Univesity of Caloocan City.<br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia saepe totam autem sunt quaerat
+        aspernatur, vel, vero velit voluptatibus vitae deserunt minus consectetur? Ipsa eum, ut accusamus rem officiis
+        quia, illum quos aspernatur distinctio illo quae veritatis dicta, cumque quod quaerat sint at vitae sapiente.
+        Expedita quae distinctio impedit!
+      </p>
 
-    <div class="developer-cards relative p-4 rounded-2xl shadow-[rgba(0,_0,_0,_0.50)_0px_5px_10px]">
-      <div class="">
-        <div class="bg-s-blue flex justify-center overflow-hidden">
-          <img class="w-full" src="/assets/images/developers/rn.jpg">
-        </div>
-        <div class="pt-4">
-          <h1 class="text-center font-bold text-2xl">Rogie C. Nepomuceno jr.</h1>
-          <h1 class="text-center font-semibold underline">Programmer</h1>
-        </div>
-      </div>
-
-      <div
-        class="text-after absolute rounded-2xl w-full h-full bg-t-blue p-4 top-0 right-0 flex flex-col justify-center items-center text-center bg-opacity-90 invisible hover:visible ease-in-out delay-150">
-        <div>
-          <p class="text-white text-lg font-merriweather font-semibold">Lorem ipsum dolor sit amet consectetur
-            adipisicing
-            elit.
-            Quaerat odio suscipit similique
-            sapiente neque
-            repellat nisi excepturi esse ipsa placeat!</p>
-        </div>
-
-        <div class="flex flex-row pt-8">
-          <a href="https://www.instagram.com/hrpecphils/" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/ig-icon.png"></a>
-          <a href="https://www.threads.net/@hrpecphils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/xffffff.svg"></a>
-          <a href="https://www.facebook.com/HRPECPhils" target="_blank"><img
-              class="h-8 mx-2 tablet:h-6 tablet:ml-0 desktop:h-8 hover:bg-s-blue hover:duration-300 rounded-full"
-              src="/assets/images/footer-images/fb-icon.png"></a>
-        </div>
-
-      </div>
+    <div class="w-3/4 rounded-2xl flex justify-center bg-t-blue pl-0 p-2 desktop:p-8">
+      <a href="#" target="_blank"><img
+          class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+          src="/assets/images/footer-images/ig-icon.png"></a>
+    <a href="#" target="_blank"><img
+        class="h-4 mx-2 desktop:mx-6 tablet:h-8 tablet:ml-0 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+        src="/assets/images/footer-images/Threads_(app)_logo.svg"></a>
+    <a href="#" target="_blank"><img
+        class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+        src="/assets/images/footer-images/fb-icon.png"></a>
+    <a href="#" target="_blank"><img
+        class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+        src="/assets/images/footer-images/xffffff.svg"></a>
+    <a href="#" target="_blank"><img
+        class="h-4 mx-2 desktop:mx-6 tablet:h-8 desktop:h-16 hover:bg-s-blue duration-300 rounded-full"
+        src="/assets/images/footer-images/tiktok-icon.png"></a>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
   </section>
 
   <script src="/assets/js/script.js"></script>
+  <script>
+    const modal1 = document.querySelector('.modal1');
 
+    const showModal1 = document.querySelector('.show-modal1');
+    const closeModal1 = document.querySelector('.close-modal1');
+
+    showModal1.addEventListener('click', function () {
+      modal1.classList.remove('hidden')
+    });
+
+    closeModal1.addEventListener('click', function () {
+      modal1.classList.add('hidden')
+    });
+  </script>
+  
+  <script>
+    const modal2 = document.querySelector('.modal2');
+
+    const showModal2 = document.querySelector('.show-modal2');
+    const closeModal2 = document.querySelector('.close-modal2');
+
+    showModal2.addEventListener('click', function () {
+      modal2.classList.remove('hidden')
+    });
+
+    closeModal2.addEventListener('click', function () {
+      modal2.classList.add('hidden')
+    });
+  </script>
+  
+  <script>
+    const modal3 = document.querySelector('.modal3');
+
+    const showModal3 = document.querySelector('.show-modal3');
+    const closeModal3 = document.querySelector('.close-modal3');
+
+    showModal3.addEventListener('click', function () {
+      modal3.classList.remove('hidden')
+    });
+
+    closeModal3.addEventListener('click', function () {
+      modal3.classList.add('hidden')
+    });
+  </script>
+  
+  <script>
+    const modal4 = document.querySelector('.modal4');
+
+    const showModal4 = document.querySelector('.show-modal4');
+    const closeModal4 = document.querySelector('.close-modal4');
+
+    showModal4.addEventListener('click', function () {
+      modal4.classList.remove('hidden')
+    });
+
+    closeModal4.addEventListener('click', function () {
+      modal4.classList.add('hidden')
+    });
+  </script>
+  
+  <script>
+    const modal5 = document.querySelector('.modal5');
+
+    const showModal5 = document.querySelector('.show-modal5');
+    const closeModal5 = document.querySelector('.close-modal5');
+
+    showModal5.addEventListener('click', function () {
+      modal5.classList.remove('hidden')
+    });
+
+    closeModal5.addEventListener('click', function () {
+      modal5.classList.add('hidden')
+    });
+  </script>
+  
+  <script>
+    const modal6 = document.querySelector('.modal6');
+
+    const showModal6 = document.querySelector('.show-modal6');
+    const closeModal6 = document.querySelector('.close-modal6');
+
+    showModal6.addEventListener('click', function () {
+      modal6.classList.remove('hidden')
+    });
+
+    closeModal6.addEventListener('click', function () {
+      modal6.classList.add('hidden')
+    });
+  </script>
+  
+  <script>
+    const modal7 = document.querySelector('.modal7');
+
+    const showModal7 = document.querySelector('.show-modal7');
+    const closeModal7 = document.querySelector('.close-modal7');
+
+    showModal7.addEventListener('click', function () {
+      modal7.classList.remove('hidden')
+    });
+
+          closeModal7.addEventListener('click', function () {
+            modal7.classList.add('hidden')
+          });
+        </script>
 </body>
 
 <footer
