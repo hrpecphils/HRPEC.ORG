@@ -138,6 +138,10 @@ header{
   margin-right: 0px;
  }
 
+ .pillar-text {
+    margin-top: -30px;
+  }
+
  .go-to-top {
   width: 40px;
   height: 40px;
@@ -161,7 +165,7 @@ header{
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
   
   .swiper {
-  height: 290px;
+  height: 280px;
   width: 100%;
  }
 
@@ -172,6 +176,10 @@ header{
   .overlay-image {
     background: RGBA(14,51,65,.3);
    }
+
+   .pillar-text {
+    margin-top: -40px;
+  }
 
  .help-hrpec {
   display: flex;
@@ -288,6 +296,10 @@ header{
    .sample-slider [class^="swiper-button-"]{
     width: 150px;
     color: #71CFEB;
+  }
+
+  .pillar-text {
+    margin-top: -60px;
   }
 
   .the-board-images-right {

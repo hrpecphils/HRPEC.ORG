@@ -285,9 +285,9 @@
 
   <section class="main-content">
     <section
-      class="flex flex-col mt-4 mb-10 bg-no-repeat bg-contain tablet:bg-[url('/assets/images/about-images/homepage-bg.svg')]">
+      class="flex flex-col mt-4 bg-no-repeat bg-contain tablet:bg-[url('/assets/images/about-images/homepage-bg.svg')]">
       <div class="flex flex-col desktop:text-base">
-        <div class="second-in-main-content flex flex-col justify-center items-center text-center mb-10 px-6">
+        <div class="second-in-main-content flex flex-col justify-center items-center text-center mb-2 desktop:mb-10 px-6">
           <h1 class="text-xl text-f-blue px-6  tablet:text-2xl desktop:text-5xl font-extrabold">PROMOTING HUMAN RIGHTS THROUGH
             CULTURE AND THE ARTS</h1>
           <p class="text-t-blue px-10 text-sm tablet:text-xl">HRPEC's cultural programs are also a
@@ -303,7 +303,7 @@
             <a class="flex flex-col justify-center items-center" href="/assets/ourwork.html#miyerkulet">
               <img class="w-3/4 tablet:w-full object-cover" src="assets/images/home-pilar-1.png">
             </a>
-            <div class="text-center">
+            <div class="pillar-text text-center">
               <h1 class="pb-4 tablet:py-4 text-xl font-bold tablet:text-base text-f-blue desktop:text-3xl">MIYERKULET!</h1>
               <p class="text-lg tablet:text-base text-black tablet:px-4 desktop:text-xl desktop:px-6 leading-normal">Is a regular
                 Wednesday event that provides a safe space for the arts and human rights advocacy.</p>
@@ -313,7 +313,7 @@
             <a class="flex flex-col justify-center items-center" href="/assets/ourwork.html#sine-syudad">
               <img class="w-3/4 tablet:w-full object-cover" src="assets/images/home-pilar-2.png">
             </a>
-            <div class="text-center">
+            <div class="pillar-text text-center">
               <h1 class="pb-4 tablet:py-4 text-xl font-bold tablet:text-base text-f-blue desktop:text-3xl">SINE SIYUDAD</h1>
               <p class="text-lg tablet:text-base text-black tablet:px-4 desktop:text-xl desktop:px-6 leading-normal">Is a
                 community-basedfilm screening event held in collaboration with local stakeholders, organizations,
@@ -326,7 +326,7 @@
               <img class="w-3/4 tablet:w-full object-cover"
                 src="assets/images/home-pilar-3.png">
             </a>
-            <div class="text-center">
+            <div class="pillar-text text-center">
               <h1 class="pb-4 tablet:py-4 text-xl font-bold tablet:text-base text-f-blue desktop:text-2xl">TEATRO TAO SA TAO</h1>
               <p class="text-lg tablet:text-base text-black tablet:px-4 desktop:text-xl desktop:px-6 leading-normal">Believes that art
                 is a powerful
@@ -338,15 +338,15 @@
           </div>
           </div>
 
-        <div class="fourth-in-main-content">
+        <div class="fourth-in-main-content bg-t-blue my-10">
           <div class="px-6 my-10">
             <h1
-              class="help-hrpec pb-2 text-f-blue text-base font-semibold tablet:pb-4 tablet:text-3xl tablet:font-bold desktop:text-5xl ">
+              class="help-hrpec pb-2 text-f-white text-base font-semibold tablet:pb-4 tablet:text-3xl tablet:font-bold desktop:text-5xl ">
               HELP
               HRPEC CREATE A
               SOCIETY WHERE
               EVERYONE'S RIGHTS ARE REALIZED, PROTECTED, AND GUARANTEED.  </h1>
-            <p class="text-black text-xs tablet:text-xl tablet:text text-center">Donate to HRPEC today and help create a more just
+            <p class="text-white text-xs tablet:text-xl tablet:text text-center">Donate to HRPEC today and help create a more just
               and
               equitable society for all! Your donation will help us open spaces for dialogue and action on human rights issues,
               stand with us in the fight for human rights, and defend the rights of the most vulnerable and marginalized people in
@@ -374,7 +374,12 @@
                       class="text-3xl font-bold text-white text-center flex justify-center py-2 tablet:py-4 desktop:text-7xl desktop:py-6">
                       KULAY AT MALAY<br>SCHEDULE
                     </h1>
-                    <img class="h-full w-full bg-cover flex justify-center items-center" src="/assets/images/sched.jpg">
+                    <div class="overflow-hidden">
+                      <a href="/assets/updates.html#update-sched">
+                        <img class="h-full w-full bg-cover flex justify-center items-center hover:scale-125 duration-300 ease-in-out"
+                          src="/assets/images/sched.jpg">
+                      </a>
+                    </div>
                   </div>
                   </section>
               <div class="bg-t-blue w-full h-full">
@@ -416,9 +421,9 @@
     const swiper = new Swiper('.swiper', {
       speed: 400,
       spaceBetween: 100,
-      // autoplay: {
-      //   delay: 3000,
-      // },
+      autoplay: {
+        delay: 3000,
+      },
       loop: 'true',
 
       // Navigation arrows
