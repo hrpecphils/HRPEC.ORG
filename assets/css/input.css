@@ -128,7 +128,12 @@ header{
     background: RGBA(14,51,65,.3);
    }
 
- .sample-slider [class^="swiper-button-"]{
+ .sample-slider [class="swiper-button-prev"]{
+    width: 20px;
+    color: #0E3341;
+  }
+
+  .sample-slider [class="swiper-button-next"]{
     width: 20px;
     color: #71CFEB;
   }
