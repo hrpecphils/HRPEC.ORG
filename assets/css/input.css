@@ -9,10 +9,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* .main-content {
-  margin-left: 100px;
-  margin-right: 100px;
-} */
+header{
+  margin-top: 0;
+}
 
 .hamburger {
   cursor: pointer;
@@ -76,7 +75,7 @@ html {
 
 
 .swiper { 
-  height: 500px;
+  height: 470px;
   width: 100%;
 }
 
@@ -115,14 +114,19 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .swiper { 
+  height: 120px;
+  width: 100%;
+}
+
   .carousel {
-  margin-top: 50px;
+    padding-top: 50px;
   }
 
-  .swiper {
-  height: 10%;
-  width: 100%;
- }
+  .overlay-image {
+    background: RGBA(14,51,65,.3);
+   }
 
  .sample-slider [class^="swiper-button-"]{
     width: 20px;
@@ -155,14 +159,19 @@ html {
 }
 
 @media only screen and (max-width: 1223px) and (min-width: 768px) {
-  .carousel {
-  margin-top: 60px;
-  }
   
   .swiper {
-  height: 10%;
+  height: 290px;
   width: 100%;
  }
+
+ .carousel {
+    padding-top: 60px;
+  }
+
+  .overlay-image {
+    background: RGBA(14,51,65,.3);
+   }
 
  .help-hrpec {
   display: flex;
@@ -266,13 +275,14 @@ html {
 }
 
 @media only screen and (min-width: 1224px){
-  .carousel {
-  margin-top: 90px;
-  }
 
   .header {
     padding-left: 120px;
     padding-right: 120px;
+   }
+
+   .overlay-image {
+    background: RGBA(14,51,65,.4);
    }
 
    .sample-slider [class^="swiper-button-"]{
